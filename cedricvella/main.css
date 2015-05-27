@@ -1,0 +1,48 @@
+header {
+    background-image: url(img/cedric-bg.jpg);
+    background-size: cover;
+}
+
+div.affix {
+    top:0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);;
+    padding: 30px 0 20px;
+    z-index: 10;
+}
+
+
+nav {
+    text-align: center
+}
+
+nav ul li  {
+    display:inline;
+    border:2px solid orange;
+    padding: 10px 30px;
+    margin:0px 10px;
+}
+
+nav ul li a {
+    display:inline;
+    color:orange;
+}
+
+div.jumbotron{
+    background-color: transparent;
+    color: white;
+    margin-bottom: 0px;
+}
+
+
+div.divider{
+    width:100px;
+    height:2px;
+    background-color:grey;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.text-gray {
+    color: gray;
+}
