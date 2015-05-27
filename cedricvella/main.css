@@ -2,99 +2,175 @@ header {
     background-image: url(img/cedric-bg.jpg);
     background-size: cover;
 }
-
 div.affix {
-    top:0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);;
+    background-color: rgba(0, 0, 0, 0.82);
+    left: 0;
     padding: 30px 0 20px;
+    top: 0;
+    width: 100%;
     z-index: 10;
 }
-
-
 nav {
-    text-align: center
+    text-align: center;
 }
-
-nav ul li  {
-    display:inline;
-    border:2px solid orange;
+nav ul li {
+    border: 2px solid rgb(166, 146, 87);
+    display: inline;
+    margin: 0px 10px;
     padding: 10px 30px;
-    margin:0px 10px;
 }
-
 nav ul li a {
-    display:inline;
-    color:orange;
+    color: rgb(166, 146, 87);
+    display: inline;
 }
-
-div.jumbotron{
+div.jumbotron {
     background-color: transparent;
     color: white;
     margin-bottom: 0px;
 }
-
-
-div.divider{
-    width:100px;
-    height:2px;
-    background-color:grey;
+div.divider {
+    background-color: gray;
+    height: 2px;
     margin: auto;
     margin-bottom: 20px;
+    width: 100px;
 }
-
 .text-gray {
     color: gray;
 }
-
 #work {
-    padding-top:130px;
-    background-color: rgb(230,230,250);
+    background-color: rgb(230, 230, 250);
+    padding-top: 130px;
 }
-
 .video {
     padding: 25px;
 }
-
 .video img {
     margin-bottom: 15px;
 }
-
 .video p {
     color: black;
     font-size: 85%;
-    margin:0;
+    margin: 0;
 }
-
 .video .title {
     text-transform: uppercase;
 }
-
 .video .description {
     font-style: italic;
 }
-
-
-#about {
+#main {
     background-color: black;
-    color:white;
+    color: white;
 }
-
+div.about-text {
+    max-width: 420px;
+}
 #about h2 {
-    margin: 100px auto 30px;
-    text-transform: uppercase;
     font-size: 180%;
     font-weight: bold;
+    margin: 100px auto 30px;
+    text-transform: uppercase;
 }
-
-
 #about p {
-    color:gray;
-    font-size: 118%;
+    color: gray;
     font-family: helvetica;
+    font-size: 115%;
+}
+#about .row {
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+#contact {
+    background-color: black;
+}
+#contact h2 {
+    color: white;
+    font-size: 160%;
+    margin-bottom: 30px;
+}
+#formular {
+    color: gray;
+    margin-top: 60px;
+}
+#formular input {
+    background-color: gray;
+    border-radius: 0;
+    border-style: none;
+}
+#contact h2, label {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+#contact textarea {
+    background-color: gray;
+    border: none;
+    height: 110px;
+    width: 100%;
+}
+#contact button {
+    background: #a69257;
+    border: none;
+    color: black;
+    height: 45px;
+    width: 100%;
+}
+.glyphicon {
+    color: #a69257;
+}
+#icons li {
+    border: 1px solid #a69257;
+    margin: 20px 10px;
+    padding: 10px 15px;
+}
+#icons {
+    margin-bottom: 180px;
+}
+div.header {
+    height: 700px;
 }
 
-#about .row {
-    margin-top: 60px;
-    margin-bottom: 30px;
+div.work-row {
+    max-width: 900px;
+    margin: 0 auto;
+}
+@media(max-width:450px) {
+    div.header {
+        height: auto;
+        padding-bottom:40px;
+    }
+    nav ul li {
+        display: block;
+        margin: 0px 10px 10px;
+    }
+    nav ul {
+        padding: 0;
+    }
+    div.affix {
+        position: inherit;
+    }
+    #work img {
+        width: 100%;
+    }
+    #work div.video {
+        width: 100%;
+    }
+}
+@media(max-width:600px) {
+    div.about-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    #about-img {
+        width: 100%;
+    }
+    div.about-text {
+        max-width: 600px;
+    }
+}
+@media(min-width:768px) {
+}
+@media(min-width:992px) {
+}
+@media(min-width:1200px) {
 }

@@ -20,7 +20,7 @@
     </head>
     <body>
         <header>
-            <div class="container-fluid" style="height:700px;">
+            <div class="container-fluid header">
                 <div style="height:200px;" class="hidden-xs"></div>
                 <div class="jumbotron text-center text-uppercase">
                     <h1>cedric vella</h1>
@@ -41,23 +41,44 @@
             </div>
         </header>
         <div class="container-fluid" id="work">
-            <div class="row">
-                <div class="col-sm-4 video">
-                    <a href="#"> <img src="img/pastizzi.jpg">
+            <div class="row work-row">
+                <div class="col-sm-4 col-xs-6 video">
+                    <a href="#"> <img class="img-responsive" src="img/pastizzi.jpg">
                     <p class="title">Global delight</p>
                     <p class="description">Web commercial promoting Camera Plus Pro updates.
                     </p>
                     </a>
                 </div>
-                  <div class="col-sm-4 video">
-                    <a href="#"> <img src="img/sram.jpg">
+                <div class="col-sm-4 col-xs-6 video">
+                    <a href="#"> <img class="img-responsive" src="img/sram.jpg">
                     <p class="title">Foodie TV</p>
                     <p class="description">Web commercial promoting Camera Plus Pro updates.
                     </p>
                     </a>
                 </div>
-                  <div class="col-sm-4 video">
-                    <a href="#"> <img src="img/ymf.jpg">
+                <div class="col-sm-4 col-xs-6 video">
+                    <a href="#"> <img class="img-responsive" src="img/ymf.jpg">
+                    <p class="title">Sram</p>
+                    <p class="description">Web commercial promoting Camera Plus Pro updates.
+                    </p>
+                    </a>
+                </div>
+                 <div class="col-sm-4 col-xs-6 video">
+                    <a href="#"> <img class="img-responsive" src="img/pastizzi.jpg">
+                    <p class="title">Global delight</p>
+                    <p class="description">Web commercial promoting Camera Plus Pro updates.
+                    </p>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-xs-6 video">
+                    <a href="#"> <img class="img-responsive" src="img/sram.jpg">
+                    <p class="title">Foodie TV</p>
+                    <p class="description">Web commercial promoting Camera Plus Pro updates.
+                    </p>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-xs-6 video">
+                    <a href="#"> <img class="img-responsive" src="img/ymf.jpg">
                     <p class="title">Sram</p>
                     <p class="description">Web commercial promoting Camera Plus Pro updates.
                     </p>
@@ -65,26 +86,75 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" id="about">
-            <h2 class="text-center">About me</h2>
-            <div class="divider"></div>
-
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="img/cedric-profile.jpg">
+        <div class="container-fluid" id="main">
+            <div id="about">
+                <h2 class="text-center">About me</h2>
+                <div class="divider"></div>
+                <div class="row">
+                    <div class="col-xs-6 about-box">
+                        <img id="about-img" class="pull-right img-responsive" src="img/cedric-profile.jpg">
+                          <div class="clearfix visible-xs"></div>
+                    </div>
+                    <div class="col-xs-6 about-box">
+                        <div class="about-text">
+                            <p>I'm a freelance videographer and sound designer based in Malta. I spent the first 7 years of my career working as a sound engineer at Temple Studios. In 2011 I decided to work on a personal audiovisual project entitled YouTube my Facebook which won first prize in the Short Film category at the Palo Alto International Film Festival in the same year.</p>
+                            <p>I film, edit and direct adverts, promotional videos for brands and events aiming to produce an engaging visual experience. Whether in a team or independently I'm always in search of creating new ideas as well as executing them to perfection.</p> 
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <p>I'm a freelance videographer and sound designer based in Malta. I spent the first 7 years of my career working as a sound engineer at Temple Studios. In 2011 I decided to work on a personal audiovisual project entitled YouTube my Facebook which won first prize in the Short Film category at the Palo Alto International Film Festival in the same year.</p>
-
-                    <p>I film, edit and direct adverts, promotional videos for brands and events aiming to produce an engaging visual experience. Whether in a team or independently I'm always in search of creating new ideas as well as executing them to perfection.</p>
-                </div>
-
+                <div class="divider"></div>
             </div>
-            
-            <div class="divider"></div>
-
+            <div class="text-center" id="icons">
+                <ul class="list-inline">
+                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> </a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                </ul>
+            </div>
         </div>
-
+        <div class="container-fluid" id="contact">
+            <h2 class="text-center">contact me</h2>
+            <div class="divider"></div>
+            <div id="formular">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="name">name:</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="email">email:</label>
+                        <div class="col-sm-6">
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="phone">phone:</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="subject">subject:</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="subject">message:</label>
+                        <div class="col-sm-6">
+                        <textarea name="comment" form="usrform"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-6">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
