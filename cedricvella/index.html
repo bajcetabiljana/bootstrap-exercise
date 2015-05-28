@@ -15,10 +15,10 @@
         <![endif]-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+      <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> -->
         <link rel="stylesheet" href="main.css">
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navbar">
         <header>
             <div class="container-fluid header">
                 <div style="height:200px;" class="hidden-xs"></div>
@@ -27,17 +27,15 @@
                     <div class="divider"></div>
                     <p class="text-gray">videographer & sound designer</p>
                 </div>
-                <div data-spy="affix" data-offset-top="450">
-                    <div class="row text-uppercase">
+                <div id="navbar" class="text-uppercase" data-spy="affix" data-offset-top="450">
                         <nav>
-                            <ul>
-                                <li class="active"><a href="#work">Work</a></li>
+                            <ul class="nav">
+                                <li><a href="#work">Work</a></li>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
-                </div>
             </div>
         </header>
         <div class="container-fluid" id="work">

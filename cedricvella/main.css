@@ -1,3 +1,6 @@
+body {
+    position: relative;
+}
 header {
     background-image: url(img/cedric-bg.jpg);
     background-size: cover;
@@ -10,19 +13,32 @@ div.affix {
     width: 100%;
     z-index: 10;
 }
-nav {
+#navbar {
     text-align: center;
 }
-nav ul li {
+#navbar ul li {
     border: 2px solid rgb(166, 146, 87);
     display: inline;
     margin: 0px 10px;
     padding: 10px 30px;
 }
-nav ul li a {
+#navbar ul li a {
     color: rgb(166, 146, 87);
     display: inline;
+    padding: 0;
 }
+#navbar li.active {
+    border: 2px solid rgb(205, 186, 137);
+}
+
+#navbar li.active a {
+    color: rgb(185, 166, 117);
+}
+
+#navbar li>a:focus, #navbar li>a:hover {
+  background-color: inherit;
+}
+
 div.jumbotron {
     background-color: transparent;
     color: white;
@@ -139,11 +155,11 @@ div.work-row {
         height: auto;
         padding-bottom:40px;
     }
-    nav ul li {
+    #navbar ul li {
         display: block;
         margin: 0px 10px 10px;
     }
-    nav ul {
+    #navbar ul {
         padding: 0;
     }
     div.affix {
