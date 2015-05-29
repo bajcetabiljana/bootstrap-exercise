@@ -23,19 +23,37 @@ ul.dropdown-menu {
 .container {
     max-width: 800px;
 }
+
 .hiddenmenu {
-    font-size: 11px;
+    font-size: 10px;
     margin-top: 200px;
+    color: gray;
 }
+.hiddenmenu a{
+    color: gray;
+}
+
 #titleabout {
     font-weight: bold;
     margin-bottom: 50px;
 }
-#titleabout a, #top a {
-    color: black;
+#titleabout a:hover{
+text-decoration: none;
+}
+.hiddemenu a{
+    color: gray;
+}
+#hiddentext{
+    margin-bottom: 60px;
 }
 #hiddentext a {
-    color: black;
+    color: gray;
+}
+#hiddentext h5, #addres, #phone, #workingtime, #textstudio, #textteam, #features{
+    margin-bottom: 20px;
+}
+#slika{
+width: 120%;
 }
 #footer {
     height: 140px;
@@ -49,4 +67,7 @@ ul.dropdown-menu {
     color: gray;
     margin-top: 25px;
     margin-bottom: 60px;
+}
+#text-positioning{
+    margin-left: 80px;
 }
