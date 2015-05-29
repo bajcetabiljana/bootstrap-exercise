@@ -1,0 +1,46 @@
+#logo{
+    margin: 110px 50px;
+}
+#logo img{
+    height: 37px;
+}
+.nav a{
+    font-size: 11px;
+    color: black;
+    margin-bottom: 10px;
+}
+ul.dropdown-menu{
+    border: 0px;
+    box-shadow: 0 0;
+}
+.picture p {
+    color: gray;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.picture {
+    width: 25%;
+    padding:18px;
+}
+
+.gallery {
+    padding :0;
+}
+.container{
+    max-width: 800px;
+}
+
+@media(max-width:700px) {
+   .picture {
+        width: 33.33%;
+    }
+}
+
+@media(max-width:550px) {
+   .picture {
+        width: 50%;
+    }
+}

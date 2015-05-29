@@ -1,0 +1,52 @@
+#logo {
+    margin: 110px 50px;
+}
+#logo img {
+    height: 37px;
+}
+.nav a {
+    font-size: 11px;
+    color: black;
+    margin-bottom: 10px;
+}
+ul.dropdown-menu {
+    border: 0px;
+    box-shadow: 0 0;
+}
+.picture p {
+    color: gray;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+.container {
+    max-width: 800px;
+}
+.hiddenmenu {
+    font-size: 11px;
+    margin-top: 200px;
+}
+#titleabout {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#titleabout a, #top a {
+    color: black;
+}
+#hiddentext a {
+    color: black;
+}
+#footer {
+    height: 140px;
+    background-color: silver;
+}
+#footer {
+    font-size: 11px;
+    margin-top: 20px;
+}
+#newsletter {
+    color: gray;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
