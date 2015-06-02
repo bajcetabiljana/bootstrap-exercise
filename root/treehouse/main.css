@@ -119,6 +119,9 @@ body {
 .main li {
     margin-right: 5px;
 }
+.main ul{
+    padding-left: 0px;
+}
 span.bullet {
     padding-right: 10px;
 }
