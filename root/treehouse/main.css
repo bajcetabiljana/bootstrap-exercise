@@ -1,4 +1,6 @@
-
+body{
+    color: gray;
+}
 .header {
 
     background-color: #384047
@@ -84,3 +86,32 @@
     margin-top: 15px;
     border-bottom:solid 3px red;
 }
+.main{
+    margin-top: 40px;
+
+}
+.main .mainCol{
+    font-size: 16px;
+}
+.main h1 a{
+font-weight: bolder;
+color: black;
+}
+.main h1 :hover{
+    color: red;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.main li{
+    font-weight: bolder;
+    display: inline;   
+}
+.mainCol ul{
+    list-style-type: disc;
+}
+.main a:hover{
+    text-decoration: none;
+}
+
+
+
