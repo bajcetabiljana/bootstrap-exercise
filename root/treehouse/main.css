@@ -1,8 +1,7 @@
-body{
+body {
     color: gray;
 }
 .header {
-
     background-color: #384047
 }
 .back {
@@ -16,7 +15,7 @@ body{
 .logo {
     width: 300px;
 }
-.search{
+.search {
     margin-top: 20px;
     position: relative;
     left: 15px;
@@ -42,76 +41,84 @@ body{
 .search:focus {
     outline: none;
 }
-.navbar{
+.navbar {
     width: 78%;
     margin-bottom: 0px;
 }
-/*novo*/
-.navbar ul{
+.navbar ul {
     width: 100%
 }
-.nav>li{
+.nav>li {
     width: 20%;
-    text-align:center;
-    border-right:1px solid gray;
+    text-align: center;
+    border-right: 1px solid gray;
 }
-.nav>li:last-of-type{
+.nav>li: last-of-type {
     border-right: none;
 }
 .nav>li>a {
     margin: auto;
 }
-
-.navbar.nav li{
+.navbar.nav li {
     border-right: solid;
     border-color: gray;
 }
-
 .navbar-inverse .navbar-nav>li>a {
-  color: white;
-  font-weight: bold;
+    color: white;
+    font-weight: bold;
 }
-
-.btn.btnStartLearning{
+.btn.btnStartLearning {
     width: 18%;
     height: 52px;
-    border-radius: 8px; 
+    border-radius: 8px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     outline: none;
     font-weight: bolder;
     white-space: normal;
 }
-.navigation{
+.navigation {
     margin-top: 15px;
-    border-bottom:solid 3px red;
+    border-bottom: solid 3px red;
 }
-.main{
-    margin-top: 40px;
-
+.main {
+    margin-top: 20px;
 }
-.main .mainCol{
+.main-col {
     font-size: 16px;
 }
-.main h1 a{
-font-weight: bolder;
-color: black;
+.main h1 {
+    line-height: 50px;
 }
-.main h1 :hover{
+.main h1 a {
+    font-weight: bolder;
+    color: black;
+}
+.main .btn {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.main h1:hover {
     color: red;
     text-decoration: none;
     font-weight: bolder;
 }
-.main li{
+.main li, p {
     font-weight: bolder;
-    display: inline;   
+    display: inline;
 }
-.mainCol ul{
-    list-style-type: disc;
-}
-.main a:hover{
+.main a:hover {
     text-decoration: none;
 }
-
-
-
+.color-red {
+    color: red;
+}
+.color-green {
+    color: green;
+}
+.main li {
+    margin-right: 5px;
+}
+span.bullet {
+    padding-right: 10px;
+}
