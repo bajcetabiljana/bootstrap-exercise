@@ -221,41 +221,39 @@ footer {
     top: 23px;
     color: green;
 }
-.stay-updated {
-    margin-bottom: 0px;
-}
-.stay-updated input {
-    border-radius: 60px;
-    width: 100%;
-    font-size: 14px;
-   height: 35px;
+.input-line {
+    position: relative;
 
 }
-.stay-updated .icon-user{
-    position: relative;
-    left: 220px;
-    top: 30px;
+.input-line .glyphicon{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+.icon-user{
     color: black;
 }
-.stay-updated .icon-letter{
-    position: relative;
-    left: 220px;
-    top: 30px;
+.icon-letter{
     color: silver;
-} 
-.stay-updated .submit-button{
-    border-radius: 10px;
+}
+.input-line input{
+    border-radius: 50px;
+    border: 0px;
+    margin-bottom: 8px;
+    font-size: 15px;
     width: 100%;
-    padding: 8px;
-    color: white;
-    background-color: gray;
-    font-size: 14px;
-    margin-bottom: 10px;
-
 }
 .form-group{
-    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom:0px;
 }
-input.input-lg.text-capitalize {
-  margin-bottom: -10px;
-  }
+.main .submit-button{
+   border-radius:10px; 
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    background-color: gray;
+    padding: 5px 60px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
