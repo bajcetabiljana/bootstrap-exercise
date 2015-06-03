@@ -89,21 +89,21 @@ body {
     font-size: 16px;
     line-height: 25px;
 }
-.main h1 {
+.main-col h1 {
     line-height: 50px;
 }
-.main h1 a {
+.main-col h1 a {
     font-weight: bolder;
     color: black;
 }
-.main .btn {
+.main-col .btn {
     margin-top: 20px;
     margin-bottom: 60px;
     border-radius: 5px;
     border-width: 1px 1px 3px 1px;
     padding: 15px 30px;
 }
-.main h1:hover {
+.main-col h1:hover {
     color: red;
     text-decoration: none;
     font-weight: bolder;
@@ -111,7 +111,7 @@ body {
 .sidebar li {
     font-weight: normal;
 }
-.main a:hover {
+.main-col a:hover {
     text-decoration: none;
 }
 .color-red {
@@ -120,12 +120,12 @@ body {
 .color-green {
     color: green;
 }
-.main li {
+.main-col li {
     margin-right: 5px;
     font-weight: bolder;
     display: inline;
 }
-.main ul {
+.main-col ul {
     padding-left: 0px;
     margin-bottom: 0px;
 }
@@ -212,9 +212,12 @@ footer {
 }
 .newsletter li {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     font-weight: normal;
     padding-left: 20px;
+}
+.newsletter ul{
+    padding-left: 0px;
 }
 .newsletter ul .glyphicon {
     position: relative;
@@ -263,10 +266,10 @@ footer {
     line-height: 1.2;
 
 }
-.articles-links h3,h6{
+.articles-links h3,.article-links h6{
     font-weight: bolder;
 }
-.articles-links h3, a{
+.articles-links h3,.article-links a{
     color: black;
     margin-bottom: 20px;
 }
@@ -278,5 +281,26 @@ footer {
     text-transform: uppercase;
     color: green;
     margin-bottom: 5px;
+}
+.like{
+    background-color: gray; 
+    margin-top: 35px;
+    color: silver;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.like .btn{
+    padding: 3px;
+}
+
+.like-button {
+    float:left;
+    margin-right: 10px;
+    margin-top:4px;
+    margin-left:10px;
+}
+.text-likes{
+    float:right;
 }
 
