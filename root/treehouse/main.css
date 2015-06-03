@@ -207,7 +207,7 @@ footer {
     background-color: silver;
     padding: 20px 30px;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     border-radius: 5px;
 }
 .newsletter li {
@@ -256,6 +256,27 @@ footer {
     padding: 10px 70px;
     margin-top: 8px;
     margin-bottom: 8px;
-    
+}
+.articles-links {
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 1.2;
 
 }
+.articles-links h3,h6{
+    font-weight: bolder;
+}
+.articles-links h3, a{
+    color: black;
+    margin-bottom: 20px;
+}
+.articles-links p{
+    color: red;
+    margin-bottom: 25px;
+}
+.articles-links h6{
+    text-transform: uppercase;
+    color: green;
+    margin-bottom: 5px;
+}
+
