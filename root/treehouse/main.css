@@ -315,6 +315,9 @@ div.bullet {
     font-weight: bold;
     float: right;
 }
+.top-button span{
+    margin-right: 5px;
+}
 .top-button a:hover {
     text-decoration: none;
 }
@@ -399,8 +402,40 @@ footer {
     margin-bottom: 50px;
 }
 
-@media(max-width: 600px){
+@media(max-width: 768px){
     .learn-item{
         width:100%;
+        border-top:solid 1px silver;
+        border-bottom: solid 1px silver;
+        padding-bottom: 15px;
     }
+    .signup-btn .btn{
+        float: none;
+        margin-left: 80px;
+    }
+    .top-button{
+        float: left;
+        padding-left: 10px;
+        padding-top: 80px;
+
+    }
+    .top-button a:hover{
+        text-decoration: none;
+    }
+    .icons{
+        visibility: hidden;
+        margin-bottom:0px;
+    }
+    .border{
+        border: none;
+        margin-top: 10px;
+        padding-bottom: 0px;
+    }
+    .btnStartLearning {
+        visibility: hidden;
+    }
+
+    
 }
+
+
