@@ -17,8 +17,8 @@
         <![endif]-->
         <link rel="stylesheet" href="main.css">
     </head>
-    <body >
-        <div class="header">
+    <body>
+        <div class="header" id="top">
             <div class="container">
                 <div class="backButton">
                     <button type="button" class="btn back"><span class="glyphicon glyphicon-arrow-left"></span> back to treehouse</button>
@@ -49,22 +49,28 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
         <div class="container main">
             <div class="row">
                 <div class="col-sm-7 main-col">
-                    <section class="sectionOne">
-                        <h1 class="text-capitalize ">
+                    <div class="article">
+                        <h1 class="text-capitalize">
                         <a href="#">
                         Creating static pages in ruby on rails
                         </a>
                         </h1>
-                        <ul >
-                            <li><a href="#" class="color-red">Jason Seifer</a> </li>
+                        <ul>
+                            <li><a href="#" >Jason Seifer</a> </li>
                             <li><span >●</span> May 27th, 2015</li>
-                            <li><span class="bullet">●</span><a href="#" class="color-green">
-                                Learn</a>
+                            <li><span class="bullet">●</span><a href="#">Learn</a>
                             </li>
-                            <li><span class="bullet">●</span><span class="text-info">2 comments</span>
+                            <li><span class="bullet">●</span><span>2 comments</span>
                             </li>
                         </ul>
                         <div class="border">Roll Your Own Static Pages in a Rails App Have you ever wanted to create static pages in a Rails application? These are pages which don’t necessarily contain any dynamic info or pull from the database, and don’t require an …</div>
@@ -73,8 +79,8 @@
                             <span class="glyphicon glyphicon-arrow-right"></span>
                             </a>
                         </div>
-                    </section>
-                    <section class="sectionTwo">
+                    </div>
+                    <div class="article">
                         <h1>
                         <a href="#">
                         Mark Went From a Technician at an Apple Retail Store to a Full-time Junior Front End Developer
@@ -92,8 +98,8 @@
                         <div>
                             <a href="#" class="btn btn-success btn-lg">continue reading <span class="glyphicon glyphicon-arrow-right" ></span></a>
                         </div>
-                    </section>
-                    <section class="sectionThree">
+                    </div>
+                    <div class="article">
                         <h1>
                         <a href="#"> Mark Went From a Technician at an Apple Retail Store to a Full-time Junior Front End Developer
                         </a>
@@ -114,7 +120,7 @@
                         <div>
                             <a href="#" class="btn btn-success btn-lg">continue reading <span class="glyphicon glyphicon-arrow-right" ></span></a>
                         </div>
-                    </section>
+                    </div>
                     <div class="chose-page">
                         <a href="#">1</a>
                         <a href="#">2</a>
@@ -122,14 +128,16 @@
                         <a href="#">></a>
                     </div>
                 </div>
+
+
                 <div class="col-sm-5 sidebar small">
                     <div class="icons">
-                        <a href="#" id="blue"><span class="glyphicon glyphicon-tree-deciduous" ></span></a>
-                        <a href="#" id="red"><span class="glyphicon glyphicon-tree-conifer"></span></a>
-                        <a href="#" id="green"><span class="glyphicon glyphicon-phone-alt"></span></a>
-                        <a href="#" id="black"><span class="glyphicon glyphicon-flash"></span></a>
-                        <a href="#" id="yellow"><span class="glyphicon glyphicon-paperclip"></span></a>
-                        <a href="#" id="orange"><span class="glyphicon glyphicon-heart-empty"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-tree-deciduous" ></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-tree-conifer"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-phone-alt"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-flash"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-paperclip"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-heart-empty"></span></a>
                     </div>
                     <div class="group-img"> <img src="img/treehouse-teachers.jpg" class="img-responsive">
                     </div>
@@ -141,22 +149,14 @@
                         <h4>Stay Updated</h4>
                         <p>Sign up for our newsletter, and we'll send you news and tutorials on web design, coding, business, and more! <strong>You'll also receive these great gifts:</strong></p>
                         <div>
-                            <ul>
-                                <span class="glyphicon glyphicon-ok"></span>
-                                <li>
-                                    <strong>Art and the Web: Line, Shape, and Form</strong> - An eBook by Treehouse Teacher Nick Pettit.
+                            <ul>                                
+                                <li><span class="glyphicon glyphicon-ok"></span><strong>Art and the Web: Line, Shape, and Form</strong> - An eBook by Treehouse Teacher Nick Pettit.
                                 </li>
-                                <span class="glyphicon glyphicon-ok"></span>
-                                <li>
-                                    <strong>On Freelancing </strong> - An audiobook about running your own business by Simon Collison.
+                                <li><span class="glyphicon glyphicon-ok"></span><strong>On Freelancing </strong> - An audiobook about running your own business by Simon Collison.
                                 </li>
-                                <span class="glyphicon glyphicon-ok"></span>
-                                <li>
-                                    <strong>On Freelancing </strong> - An audiobook about running your own business by Simon Collison.
+                                <li><span class="glyphicon glyphicon-ok"></span><strong>On Freelancing </strong> - An audiobook about running your own business by Simon Collison.
                                 </li>
-                                <span class="glyphicon glyphicon-ok "></span>
-                                <li>
-                                    <strong>Background Patterns Set </strong> - 28 background pattern images by Mike Kus.
+                                <li><span class="glyphicon glyphicon-ok"></span><strong>Background Patterns Set </strong> - 28 background pattern images by Mike Kus.
                                 </li>
                             </ul>
                         </div>
@@ -167,8 +167,7 @@
                                     <span class="glyphicon glyphicon-user icon-user"></span>
                                 </div>
                                 <div class="input-line">
-                                    <input
-                                    type="email" placeholder="email address" class="input-lg text-capitalize">
+                                    <input type="email" placeholder="email address" class="input-lg text-capitalize">
                                     <span class="glyphicon glyphicon-envelope icon-letter"></span>
                                 </div>
                             </div>
@@ -192,11 +191,11 @@
                         </span>
                         </a>
                     </section>
-                    <span>
-                    <a href="#">
-                    <img src="img/treehouse-show.jpg" class="img-responsive">
-                    </a>
-                    </span>
+                    <div>
+                        <a href="#">
+                        <img src="img/treehouse-show.jpg" class="img-responsive">
+                        </a>
+                    </div>
                     <div class="like">
                         <div class="like-button">
                             <a href="#" class="btn btn-primary">f like <span class="glyphicon glyphicon-ok"></span>
@@ -207,57 +206,81 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="top-button">
+                    <a href="#top"><span class="glyphicon glyphicon-arrow-up"></span><span class="text-uppercase">back to top</span></a>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="container footer">
                 <div class="row">
                     <div class="col-xs-7">
-                        <h1>continue learning</h1>
+                        <h2>continue learning</h2>
                         <p>Treehouse is the best way to learn technology skills that can change your life.</p>
                     </div>
-                    <div class="col-xs-5">
-                        <a href="#" class="btn btn-success btn-lg">sign up for Treehous</a>
+                    <div class="col-xs-5 signup-btn">
+                        <a href="#" class="btn btn-success btn-lg">Sign up for Treehouse</a>
                     </div>
                 </div>
-                <section>
-                    <h3>continue learning</h3>
-                </section>
-                <p>If you’ve never built a website before and you have no coding or design experience, this is the place to start. Learn how to build a modern portfolio website for desktops, tablets, and mobile devices!</p>
-                <button class="btn btn-primary btn-lg ">learn more</button>
-                <section>
-                    <h3>continue learning</h3>
-                </section>
-                <p>If you’ve never built a website before and you have no coding or design experience, this is the place to start. Learn how to build a modern portfolio website for desktops, tablets, and mobile devices!</p>
-                <button class="btn btn-primary btn-lg ">learn more</button>
-                <section>
-                    <h3>continue learning</h3>
-                </section>
-                <p>If you’ve never built a website before and you have no coding or design experience, this is the place to start. Learn how to build a modern portfolio website for desktops, tablets, and mobile devices!</p>
-                <button class="btn btn-primary btn-lg ">learn more</button>
-            </section>
-            <section id="footerNavBar">
-                <ul>
-                    <li><a href="#">about treehouse</a></li>
-                    <li><a href="#">jobbs</a></li>
-                    <li><a href="#">terms & Conditions</a></li>
-                    <li><a href="#">privaty policy</a></li>
-                    <li><a href="#">contact us</a></li>
-                </ul>
-            </section>
-            <section>
-                <div class="row">
-                    <div class="col-xs-8">
-                        <img src="img/logo-blog2x.png" class="img-responsive">
+                <div class="learn-container small">
+                    <div class="learn-item">
+                        <h4>continue Learning</h4>
+                        <section>If you’ve never built a website before and you have no coding or design experience, this is the place to start. Learn how to build a modern portfolio website for desktops, tablets, and mobile devices!
+                        </section>
+                        <button class="btn btn-primary btn-lg ">learn more</button>
+                    </div>
+                    <div class="learn-item">
+                        <h4>continue learning</h4>
+                        <section>If you’ve never built a website before and you have no coding or design experience, this is the place to start. Learn how to build a modern portfolio website for desktops, tablets, and mobile devices!
+                        </section>
+                        <button class="btn btn-primary btn-lg ">learn more</button>
+                    </div>
+                    <div class="learn-item">
+                        <h4>continue learning</h4>
+                        <section>If you’ve never built a website before and you have no coding or design experience, this is the place to start. Learn how to build a modern portfolio website for desktops, tablets, and mobile devices!
+                        </section>
+                        <button class="btn btn-primary btn-lg ">learn more</button>
+                    </div>
+                    <div class="learn-item">
+                        <h4>continue learning</h4>
+                        <section>If you’ve never built a website before and you have no coding or design experience, this is the place to start. Learn how to build a modern portfolio website for desktops, tablets, and mobile devices!
+                        </section>
+                        <button class="btn btn-primary btn-lg ">learn more</button>
+                    </div>
+
+                    <div class="learn-item">
+                        <h4>continue learning</h4>
+                        <section>If you’ve never built a website before and you have no coding or design experience, this is the place to start. Learn how to build a modern portfolio website for desktops, tablets, and mobile devices!
+                        </section>
+                        <button class="btn btn-primary btn-lg">learn more</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="footer-nav small text-capitalize">
+                    <ul>
+                        <li><a href="#">about treehouse</a></li>
+                        <li><a href="#">jobbs</a></li>
+                        <li><a href="#">terms & Conditions</a></li>
+                        <li><a href="#">privaty policy</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="aim">
+                    <img src="img/logo-blog2x.png" class="logo-bottom img-responsive">
+                    <div>
                         <p>Our mission is to bring affordable technology education to people everywhere, in order to help them achieve their dreams and change the world.</p>
-                        <p>©2012 Treehouse Island, Inc.</p>
+                        <p>©2012 Treehouse Island, Inc.
+                        </p>
                     </div>
                 </div>
-            </section>
-        </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-</body>
+            </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </body>
 </html>
