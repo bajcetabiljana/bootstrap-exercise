@@ -41,6 +41,10 @@ body {
     right: 40px;
     color: white;
 }
+.search span{
+    position: relative;
+    right: 40px;
+}
 .search:focus {
     outline: none;
 }
@@ -70,12 +74,12 @@ body {
     color: white;
     font-weight: bold;
 }
-.btn.btnStartLearning {
+.btn.btn-start-learning {
     width: 18%;
     height: 52px;
     border-radius: 8px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     outline: none;
     font-weight: bolder;
     white-space: normal;
@@ -402,7 +406,23 @@ footer {
     margin-bottom: 50px;
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
+    .logo img{
+        width: 70%;
+    }
+    .navbar{
+        background-color: transparent;
+        border: none;
+    }
+    .navbar-toggle{
+        padding: 15px;
+        background-color: black;
+        float: right;
+        border-bottom: none;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
     .learn-item{
         width:100%;
         border-top:solid 1px silver;
@@ -422,18 +442,27 @@ footer {
     .top-button a:hover{
         text-decoration: none;
     }
-    .icons{
-        visibility: hidden;
-        margin-bottom:0px;
-    }
     .border{
         border: none;
         margin-top: 10px;
         padding-bottom: 0px;
     }
-    .btnStartLearning {
-        visibility: hidden;
-    }
+.chose-page{
+    background-color: blue;
+    margin-bottom: 30px;
+} 
+.navbar ul{
+    background-color: black;
+}
+.navbar li{
+    border-bottom: solid 1px silver;
+    border-right: 0px;
+    width: 100%;
+    text-align: left;
+}
+.navbar ul{
+    margin-top: 53px;
+}
 
     
 }

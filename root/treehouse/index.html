@@ -20,8 +20,8 @@
     <body>
         <div class="header" id="top">
             <div class="container">
-                <div class="backButton">
-                    <button type="button" class="btn back"><span class="glyphicon glyphicon-arrow-left"></span> back to treehouse</button>
+                <div class="back-button  hidden-xs">
+                    <button type="button" class="btn back"><span class="glyphicon glyphicon-arrow-left"></span> Back to Treehouse </button>
                 </div>
                 <div class="logo pull-left">
                     <a href="#">
@@ -29,16 +29,18 @@
                     </a>
                 </div>
                 <div class="search pull-right">
-                    <input placeholder="Search" type="search">
+            
+                    <input class="mySearch" placeholder="Search" type="search">
                     <span class="glyphicon glyphicon-search"></span>
+
                 </div>
-                <div class="clearfix"></div>
+                <div class="clearfix hidden-xs"></div>
                 <div class="navigation">
-                    <nav class="navbar navbar-inverse pull-left">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <nav class="navbar navbar-inverse pull-right ">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span> 
       </button>
                         <ul class="nav navbar-nav" id="myNavbar">
                             <li><a href="#">All</a></li>
@@ -48,7 +50,7 @@
                             <li><a href="#">News</a></li>
                         </ul>
                     </nav>
-                    <button class="btnStartLearning btn btn-success pull-right text-center">Start learning for free
+                    <button class="btn-start-learning btn btn-success pull-right text-center hidden-xs">Start learning for free
                     </button>
                     <div class="clearfix"></div>
                 </div>
@@ -136,7 +138,7 @@
 
 
                 <div class="col-sm-5 sidebar small">
-                    <div class="icons">
+                    <div class="icons hidden-xs">
                         <a href="#"><span class="glyphicon glyphicon-tree-deciduous" ></span></a>
                         <a href="#"><span class="glyphicon glyphicon-tree-conifer"></span></a>
                         <a href="#"><span class="glyphicon glyphicon-phone-alt"></span></a>
