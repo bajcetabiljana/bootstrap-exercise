@@ -3,8 +3,11 @@
     color: #444444;
     font-family: sans-serif;
 }
-header .row{
+header .row {
     padding-top: 35px;
+    padding-right: 1%;
+    padding-left: 1%;
+
 }
 .message {
     padding-top: 15px;
@@ -17,22 +20,41 @@ header .row{
 .navbar li {
     list-style-type: none;
     font-size: 12px;
-    text-align:right;
+    text-align: right;
     padding-bottom: 6px;
+    
 }
-.navbar li:hover{
+.navbar li:hover {
     color: red;
 }
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 97%;
-      margin: auto;
-  }
-  .info{
-    position: absolute;
-    bottom: 0px;
-    right: 10px;
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 97%;
+    margin: auto;
+}
+footer{
+    text-align: right;
+    padding-right: 1%;
+    border: solid red 3px;
+}
+.info{
+    padding-top: 80px;
+}
 
 
+   @media (max-width: 1000px){
+.message div{
+    display: none;
+}
+.navbar li{
+    display: inline; 
+    padding-right: 90px;   
+}
+.navbar ul{
+   text-align: center;
+   margin-left: 40px;
+}
 
-  }
+}
+   
+
+   
