@@ -47,7 +47,7 @@ footer{
 }
 .navbar li{
     display: inline; 
-    padding-right: 90px;   
+    padding-right: 10%;   
 }
 .navbar ul{
    text-align: center;
