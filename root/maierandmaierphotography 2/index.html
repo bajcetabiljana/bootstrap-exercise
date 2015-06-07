@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Doabackflip</title>
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <div class="row">
+                    <div class="col-xs-4 message small">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <span>Through our lens <br/>
+                                    you'll only get to see
+                                    secret spots.</span>
+                                </div>
+                                <div class="item">
+                                    <span>Through our lens
+                                    you'll only get to see
+                                    amazing people.</span>
+                                </div>
+                                <div class="item">
+                                    Through our lens
+                                    you'll only get to see
+                                    beautiful nature.
+
+                                </div>
+                                <div class="item">
+                                    Through our lens
+                                    you'll only get to see
+                                    hidden treasures.
+                                    real life.
+                                    magical landscapes.
+                                    amazing people.
+                                    secret spots.
+                                    beautiful nature.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="logo">
+                            <a href="http://localhost:8000/maierandmaierphotography/index.html">
+                            <img class="img-responsive" src="img/mmp-brand-header2x.png">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4 navbar text-uppercase">
+                        <ul>
+                            <li>profile</li>
+                            <li>portfolio</li>
+                            <li>contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <ul id="cbp-bislideshow" class="cbp-bislideshow">
+                <li><img src="img/blind-woman-in-the-streets-of-dhaka-bangladesh-2000x1250.jpg" alt="image01"/></li>
+                <li><img src="img/landscape-mt-potts-harper-range-new-zealand-home-page.jpg" alt="image02"/></li>
+                <li><img src="img/paris-from-above-arc-de-triomphe-eiffel-tower-france-2-2000x1250.jpg" alt="image03"/></li>
+                <li><img src="img/tea-plantation-sylhet-bangladesh-2000x1250.jpg" alt="image04"/></li>
+            </ul>
+            <div id="cbp-bicontrols" class="cbp-bicontrols">
+                <span class="cbp-biprev"></span>
+                <span class="cbp-bipause"></span>
+                <span class="cbp-binext"></span>
+            </div>
+        </div>
+
+
+
+
+        <div class="footer">
+            <div class="info small">© 2015 Ulrike Maier & Nisa Maier. All rights reserved. Imprint</div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- imagesLoaded jQuery plugin by @desandro : https://github.com/desandro/imagesloaded -->
+    <script src="js/jquery.imagesloaded.min.js"></script>
+    <script src="js/cbpBGSlideshow.min.js"></script>
+    <script>
+                                $(function() {
+                                    cbpBGSlideshow.init();
+                                });
+    </script>
+
+</body>
+</html>
