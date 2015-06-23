@@ -1,0 +1,574 @@
+body {
+    font-family: fantasy;
+    font-size: 18px;
+}
+
+header {
+    position: relative;
+    background-image: url("img/home-header-space-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 1000px;
+}
+
+header .navbar {
+    background-color: transparent;
+    border: none;
+}
+
+header .navbar:button.navbar-toggle {
+    z-index: 10;
+}
+
+.nav-img {
+    width: 130px;
+}
+
+.collapse-row {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.nav-col {
+    padding: 35px;
+    height: 100%;
+    border-right: 1px solid silver;
+}
+
+.nav-col p {
+    padding-top: 35px;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+.navbar-right {
+    width: 100%;
+    margin-right: 0;
+}
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: none;
+}
+
+header .input-lg {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid silver;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.navbar-nav>li {
+    float: none;
+}
+
+.navbar-col {
+    padding: 0;
+}
+
+.navbar-col li {
+    font-size: 25px;
+    padding: 10px 10px;
+    border-bottom: 1px solid silver;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+
+.navbar-col li:last-child {
+    border-bottom: none;
+}
+
+.navbar-col li:nth-child(6) {
+    border-bottom: none;
+}
+
+.submit-btn {
+    background-image: url(img/ecommerce.png);
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 7px 15px;
+    margin-right: 20px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.submit-btn:hover {
+    animation: rainbow-btn 10s infinite;
+}
+
+@keyframes rainbow-btn {
+    0% {
+        background: red;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background: yellow;
+    }
+    75% {
+        background: green;
+    }
+    100% {
+        background: red;
+    }
+}
+
+div.header {
+    background-color: transparent;
+    color: white;
+    padding-top: 200px;
+    font-size: 20px;
+}
+
+.header h1 {
+    font-size: 90px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+button {
+    background-image: url(img/ecommerce.png);
+    padding: 8px 15px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+}
+
+.arrow img {
+    height: 55px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+}
+
+.astronaut {
+    position: absolute;
+    animation: cosmos 5s infinite;
+}
+
+.satelite {
+    position: absolute;
+    animation: satelite 5s infinite;
+}
+
+@keyframes satelite {
+    0% {
+        top: 80px;
+        right: 130px;
+    }
+    25% {
+        top: 100px;
+        right: 150px;
+    }
+    50% {
+        top: 90px;
+        right: 140px;
+    }
+    75% {
+        bottom: 100px;
+        right: 140px;
+    }
+    100% {
+        top: 80px;
+        right: 130px;
+    }
+}
+
+@keyframes cosmos {
+    0% {
+        bottom: 80px;
+        left: 130px;
+    }
+    25% {
+        bottom: 100px;
+        left: 150px;
+    }
+    50% {
+        bottom: 90px;
+        left: 140px;
+    }
+    75% {
+        bottom: 100px;
+        left: 140px;
+    }
+    100% {
+        bottom: 80px;
+        left: 130px;
+    }
+}
+
+.text {
+    margin: 80px 100px;
+}
+
+.text button {
+    margin-top: 20px;
+}
+
+.img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.img-1 {
+    background-image: url(img/first-picture.jpg);
+}
+
+.img-2 {
+    background-image: url(img/second-img.jpg);
+}
+
+.img-3 {
+    background-image: url(img/third-img.jpg);
+}
+
+.img-4 {
+    background-image: url(img/fourth-img.jpg);
+}
+
+.img .row {
+    visibility: hidden;
+}
+
+.img:hover .row {
+    visibility: visible;
+}
+
+.img>.row {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.row {
+    padding: 50px;
+}
+
+.row h1, .row p {
+    color: black;
+}
+
+.row img {
+    width: 6vw;
+} 
+.img h1{
+    margin-top: 0;
+    font-size: 3vw;
+}
+
+.img .col-xs-4 p {
+    color: red;
+}
+.img .col-xs-4 {
+        text-align: right;
+    }
+
+header .navbar.affix {
+    background-color: white;
+}
+
+header .navbar.affix .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.view-details {
+    text-align: center;
+}
+
+.view-details img {
+    width: 130px;
+}
+
+.view-details h4 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.view-details span {
+    color: red;
+    text-transform: capitalize;
+}
+
+.view-details .view {
+    border-right: 1px solid silver;
+    float: left;
+    width: 33.3%;
+    padding: 40px 0;
+}
+.view-resp:hover button{
+     animation: rainbow-btn 10s infinite;
+}
+.view-resp{
+    padding:40px 10px;
+    padding-bottom: 30px;
+}
+.view-resp h4{
+    padding: 8px;
+    color: black;
+    font-weight: bolder;
+}
+.learn-people {
+    background-image: url(img/learn-people.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    color: white;
+    text-align: left;
+    height: 400px;
+    
+
+}
+.learn-people>.text{
+    width: 40%;
+    float: right;
+}
+.learn-people span{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.logo-img .col-lg-3 {
+  border: solid 1px silver;
+  padding: 40px 20px;
+}
+
+.clients img{
+width: 120px;
+}
+.clients .a{
+    border-top: 0;
+}
+.clients .b{
+    border-bottom: 0;
+}
+.clients .c{
+    border-left: 0;
+}
+.clients .d{
+    border-right: 0;
+}
+.clients h4{
+    font-weight: bolder;
+}
+.clients li{
+    list-style-type: none;
+    margin-bottom: 15px;
+
+}
+.clients ul{
+    padding-left: 0;
+}
+.clients-text{
+    margin-top: 80px;
+}
+.clients-text span{
+    font-size: 20px;
+
+}
+
+footer .background{
+    font-size: 100px;
+    padding-top: 60px;
+    text-align: center;
+    background-image: url(img/astro-day.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 826px;
+
+}
+footer .background img{
+    position: relative;
+   
+}
+
+
+
+
+@media (min-width:768px) {
+    .nav span img {
+        width: 60px;
+    }
+    .navbar-toggle {
+        display: inline-block;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    .view-resp{
+        display: none;
+    }
+}
+.something-about{
+    border-top:1px solid silver;
+    margin-top: 20px;
+    padding: 30px; 
+    font-size: 20px;
+}
+.something-about img{
+    width: 40px;
+    margin-right: 30px;
+}
+
+
+
+@media(max-width:990px) {
+    .row {
+        left: 0;
+    }
+    .img {
+        float: none;
+        width: 100%;
+        height: 50vw;
+    }
+    .img .row {
+        height: 100%;
+        padding: 120px 100px;
+    }
+    .img h1{
+        font-size: 4vw;
+    }
+    
+   
+}
+
+@media(max-width:768px) {
+    .nav-col {
+        display: none;
+    }
+    .navbar-col li {
+        padding-left: 30px;
+    }
+    .navbar-col li:last-child {
+        border-bottom: 1px solid silver;
+    }
+    .navbar-col li:nth-child(6) {
+        border-bottom: 1px solid silver;
+    }
+    .nav img {
+        width: 40px;
+    }
+    .astronaut, .satelite {
+        display: none;
+    }
+    .header h1 {
+        font-size: 55px;
+    }
+    .header h2 {
+        font-size: 25px;
+    }
+    .arrow img {
+        height: 35px;
+    }
+    .img .row {
+          padding: 50px 100px;
+    }
+    .view-details .view {
+        float: none;
+        width: 100%;
+        border: none;
+    }
+    .view{
+        display: none;
+    }
+    .learn-people>.text {
+        float: left;
+        width: 80%;
+        text-align: left;
+       margin-left: 15px;
+    }
+.learn-people .btn-learn{
+    text-align: center;
+}
+.clients{
+    text-align: center;
+}
+
+}
+
+
+
+
+@media(max-width: 1200px){
+.logo-img .col-xs-6 {
+  border: solid 1px silver;
+  padding: 40px 60px;
+}
+.clients .i{
+    border-top: 0; 
+}
+.clients .j{
+    border-bottom: 0; 
+}
+.clients .k{
+    border-left: 0;
+
+}
+.clients :not(.k){
+    border-right: 0;
+}
+.clients .logo-img {
+    padding: 0;
+}
+.clients img{
+    width: 150px;vw;
+}
+
+}
+@media (max-width:950px) {
+    .header {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    
+}
+@media (max-width: 550px) {
+    .img .col-xs-8 {
+        display: none;
+    }
+    .img .col-xs-4 {
+        width: 100%;
+        text-align: center;
+    }
+    .img h1{
+        font-size: 6vw;
+    }
+    .learn-people>.text {
+        float: left;
+        width: 90%;
+        text-align: center;
+       
+   } 
+   .logo-img .col-xs-6{
+    padding-left:15px; 
+   }
+   .clients img{
+    width: 30vw;
+}
+}
+
+

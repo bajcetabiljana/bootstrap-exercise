@@ -1,0 +1,20 @@
+body{
+    background-color: #fdfcf9;
+    color: #444444;
+    font-family: sans-serif;
+
+}
+.container-fluid{
+    width: 97%;
+}
+header{
+    margin-top: 40px;
+}
+nav li{
+    list-style-type: none;
+    color: #444444;
+}
+nav a{
+    color: #444444;
+    font-size: 12px;
+}

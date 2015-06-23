@@ -7,7 +7,6 @@ header .row {
     padding-top: 35px;
     padding-right: 1%;
     padding-left: 1%;
-
 }
 .message {
     padding-top: 15px;
@@ -22,7 +21,6 @@ header .row {
     font-size: 12px;
     text-align: right;
     padding-bottom: 6px;
-    
 }
 .navbar li:hover {
     color: red;
@@ -31,30 +29,46 @@ header .row {
     width: 97%;
     margin: auto;
 }
-footer{
+footer {
     text-align: right;
-    padding-right: 1%;
-    border: solid red 3px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-.info{
-    padding-top: 80px;
+.info {
+    width: 97%;
+    margin: auto;
 }
-
-
-   @media (max-width: 1000px){
-.message div{
-    display: none;
+@media (max-width:768px) {
+    .message div {
+        display: none;
+    }
+    .navbar li {
+        float:left;        
+        width:33.3%;
+    }
+    li:first-child {
+        text-align: left;
+    }
+    li:nth-child(2) {
+        text-align :center;
+    }
+    .navbar ul {
+/*
+*/        width: 100%;
+        padding: 0;
+    }
+    .info {
+        text-align: center;
+        color:white;
+        font-size:65%;
+    }
+    .navbar {
+   min-height: 1px; 
+   margin-bottom: 0; 
 }
-.navbar li{
-    display: inline; 
-    padding-right: 10%;   
+    footer .container-fluid {
+        background-color: transparent;
+    }
 }
-.navbar ul{
-   text-align: center;
-   margin-left: 10px;
-}
-
-}
-   
-
-   
