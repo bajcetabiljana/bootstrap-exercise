@@ -158,59 +158,29 @@ button {
 
 .astronaut {
     position: absolute;
-    animation: cosmos 5s infinite;
+    left: 20%;
+    bottom: 10%;
+    animation: myAstro linear 6s infinite;
+}
+
+@keyframes myAstro {
+    from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
 }
 
 .satelite {
     position: absolute;
-    animation: satelite 5s infinite;
+    top: 10%;
+    right: 10%;
+    animation: mySatelite linear 7s infinite;
 }
 
-@keyframes satelite {
-    0% {
-        top: 80px;
-        right: 130px;
-    }
-    25% {
-        top: 100px;
-        right: 150px;
-    }
-    50% {
-        top: 90px;
-        right: 140px;
-    }
-    75% {
-        bottom: 100px;
-        right: 140px;
-    }
-    100% {
-        top: 80px;
-        right: 130px;
-    }
+@keyframes mySatelite {
+    from { transform: rotate(0deg) translateX(40px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(40px) rotate(-360deg); }
 }
 
-@keyframes cosmos {
-    0% {
-        bottom: 80px;
-        left: 130px;
-    }
-    25% {
-        bottom: 100px;
-        left: 150px;
-    }
-    50% {
-        bottom: 90px;
-        left: 140px;
-    }
-    75% {
-        bottom: 100px;
-        left: 140px;
-    }
-    100% {
-        bottom: 80px;
-        left: 130px;
-    }
-}
+
 
 .text {
     margin: 80px 100px;
@@ -265,10 +235,7 @@ button {
     color: black;
 }
 
-.row img {
-    width: 6vw;
-} 
-.img h1{
+.img h1 {
     margin-top: 0;
     font-size: 3vw;
 }
@@ -276,9 +243,10 @@ button {
 .img .col-xs-4 p {
     color: red;
 }
+
 .img .col-xs-4 {
-        text-align: right;
-    }
+    text-align: right;
+}
 
 header .navbar.affix {
     background-color: white;
@@ -314,18 +282,22 @@ header .navbar.affix .navbar-toggle .icon-bar {
     width: 33.3%;
     padding: 40px 0;
 }
-.view-resp:hover button{
-     animation: rainbow-btn 10s infinite;
+
+.view-resp:hover button {
+    animation: rainbow-btn 10s infinite;
 }
-.view-resp{
-    padding:40px 10px;
+
+.view-resp {
+    padding: 40px 10px;
     padding-bottom: 30px;
 }
-.view-resp h4{
+
+.view-resp h4 {
     padding: 8px;
     color: black;
     font-weight: bolder;
 }
+
 .learn-people {
     background-image: url(img/learn-people.jpg);
     background-repeat: no-repeat;
@@ -333,71 +305,235 @@ header .navbar.affix .navbar-toggle .icon-bar {
     color: white;
     text-align: left;
     height: 400px;
-    
-
 }
-.learn-people>.text{
+
+.learn-people>.text {
     width: 40%;
     float: right;
 }
-.learn-people span{
+
+.learn-people span {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: bolder;
 }
 
-.logo-img .col-lg-3 {
-  border: solid 1px silver;
-  padding: 40px 20px;
+.clients img {
+    width: 120px;
 }
 
-.clients img{
-width: 120px;
-}
-.clients .a{
-    border-top: 0;
-}
-.clients .b{
-    border-bottom: 0;
-}
-.clients .c{
-    border-left: 0;
-}
-.clients .d{
-    border-right: 0;
-}
-.clients h4{
+.clients h4 {
     font-weight: bolder;
 }
-.clients li{
+
+.clients li {
     list-style-type: none;
     margin-bottom: 15px;
-
 }
-.clients ul{
+
+.clients ul {
     padding-left: 0;
 }
-.clients-text{
+
+.clients-text {
     margin-top: 80px;
 }
-.clients-text span{
-    font-size: 20px;
 
+.clients-text span {
+    font-size: 20px;
 }
 
-footer .background{
+.logo-img div:nth-child(-n+8) {
+    border-bottom: 1px solid silver;
+}
+
+.logo-img div {
+    border-right: 1px solid silver;
+}
+
+.logo-img div:nth-child(4n) {
+    border-right: 0;
+}
+
+footer .background {
+    position: relative;
     font-size: 100px;
+    color: black;
     padding-top: 60px;
     text-align: center;
     background-image: url(img/astro-day.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 826px;
+    overflow: hidden;
+}
+.background span{
+    position: relative;
+    z-index: 40;    
+}
+footer a:hover{
+    text-decoration: none;
+    }
+.background .astro {
+    z-index: 50;
+    position: absolute;
+    left:50%;
+    top:60%;
+    animation: myOrbit 6s linear infinite;
+}
+
+/*.background:hover .astro {
+    animation: fly-up 3s;
+
+}*/
+
+/*astro.jump {
+    animation: fly-up 3s;
+}
+
+@keyframes fly-up {
+    0% {
+        top: 800px;
+    }
+    100% {
+        top: -1000px;
+    }
+
+}*/
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+}
+
+
+
+
+.background .cloud1 {
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    z-index: 60;
+    animation: myCloud 55s linear infinite;
+}
+
+.background .cloud2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: myCloud 45s linear infinite;
+    
+}
+
+.background .cloud3 {
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+    animation: myCloud 35s linear infinite;
+    
+   
+}
+
+.background .cloud4 {
+    position: absolute;
+   right: 50%;
+    top: 60%;  
+    animation: myCloud 50s linear infinite;  
+}
+
+.background .cloud5 {
+    position: absolute;
+    animation: myCloud 30s linear infinite;
+   
+}
+@keyframes myCloud {
+    from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+}
+
+.something-about {
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.something-about img {
+    width: 40px;
+    margin-right: 30px;
+}
+
+.logo-img>div {
+    padding: 40px 20px;
+}
+
+.footer-nav {
+    font-size: 14px;
+    background-color: silver;
+    border-bottom: 2px solid gray;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+}
+.footer-nav p{
+    font-weight: bolder;
+}
+.footer-nav li a{
+    color: black;
+    font-weight: bolder;
+}
+.footer-nav li a:hover{
+    color: red;
+}
+.nav-li .row{
+    padding-top: 0;
+}
+.nav-bar{
+    padding-left: 0;
+}
+.nav-bar li{
+    padding-bottom: 6px;
+}
+footer .logo-submit{
+    padding-left: 0;
+    padding-right: 0;
+}
+footer .logo-submit img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+    margin-right: 5px;
+}
+.footer-btn{
+    padding-left: 0;
 
 }
-footer .background img{
+.logo-submit input{
+    color: black;
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+.logo-submit input.submit{
+    border: 2px solid black;
     position: relative;
-   
+    right: 5px;
+}
+
+
+
+.footer-end {
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 30px 0;
+}
+
+.footer-end span {
+    border-right: 1px solid black;
+    padding: 0 15px;
 }
 
 
@@ -419,22 +555,11 @@ footer .background img{
     .collapse.in {
         display: block !important;
     }
-    .view-resp{
+    .view-resp {
         display: none;
     }
-}
-.something-about{
-    border-top:1px solid silver;
-    margin-top: 20px;
-    padding: 30px; 
-    font-size: 20px;
-}
-.something-about img{
-    width: 40px;
-    margin-right: 30px;
-}
 
-
+}
 
 @media(max-width:990px) {
     .row {
@@ -449,11 +574,15 @@ footer .background img{
         height: 100%;
         padding: 120px 100px;
     }
-    .img h1{
+    .img h1 {
         font-size: 4vw;
     }
-    
-   
+    .nav-li .row{
+        margin-top: 25px;
+    }
+       .logo-submit {
+        text-align: right;
+    }    
 }
 
 @media(max-width:768px) {
@@ -485,68 +614,68 @@ footer .background img{
         height: 35px;
     }
     .img .row {
-          padding: 50px 100px;
+        padding: 50px 100px;
     }
     .view-details .view {
         float: none;
         width: 100%;
         border: none;
     }
-    .view{
+    .view {
         display: none;
     }
     .learn-people>.text {
         float: left;
         width: 80%;
         text-align: left;
-       margin-left: 15px;
+        margin-left: 15px;
     }
-.learn-people .btn-learn{
-    text-align: center;
-}
-.clients{
-    text-align: center;
-}
-
-}
-
-
-
-
-@media(max-width: 1200px){
-.logo-img .col-xs-6 {
-  border: solid 1px silver;
-  padding: 40px 60px;
-}
-.clients .i{
-    border-top: 0; 
-}
-.clients .j{
-    border-bottom: 0; 
-}
-.clients .k{
-    border-left: 0;
-
-}
-.clients :not(.k){
-    border-right: 0;
-}
-.clients .logo-img {
-    padding: 0;
-}
-.clients img{
-    width: 150px;vw;
+    .learn-people .btn-learn {
+        text-align: center;
+    }
+    .clients {
+        text-align: center;
+    }
+    .background, .footer-nav {
+        display: none;
+    }
+    .footer-end span {
+        display: block;
+    }
+    .footer-end span {
+        border-right: 0;
+    }
 }
 
+@media(max-width:1200px) {
+    .logo-img .col-xs-6 {
+        padding: 40px 60px;
+    }
+    .clients .logo-img {
+        padding: 0;
+    }
+    .clients img {
+        width: 150px;
+    }
+    .logo-img div:nth-child(2n) {
+        border-right: 0;
+    }
+    .logo-img div:nth-last-child(-n+2) {
+        border-top: 1px solid silver;
+    }
+    .img-text{
+        width: 25vw;
+    }
 }
+
 @media (max-width:950px) {
     .header {
         padding-right: 50px;
         padding-left: 50px;
     }
-    
 }
-@media (max-width: 550px) {
+
+@media (max-width:550px) {
     .img .col-xs-8 {
         display: none;
     }
@@ -554,21 +683,18 @@ footer .background img{
         width: 100%;
         text-align: center;
     }
-    .img h1{
+    .img h1 {
         font-size: 6vw;
     }
     .learn-people>.text {
         float: left;
         width: 90%;
         text-align: center;
-       
-   } 
-   .logo-img .col-xs-6{
-    padding-left:15px; 
-   }
-   .clients img{
-    width: 30vw;
+    }
+    .logo-img .col-xs-6 {
+        padding-left: 15px;
+    }
+    .clients img {
+        width: 30vw;
+    }
 }
-}
-
-
