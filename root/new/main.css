@@ -8,20 +8,53 @@ header {
     background-image: url("img/home-header-space-bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 1000px;
+    height: 900px;
 }
 
 header .navbar {
     background-color: transparent;
     border: none;
 }
-
-header .navbar:button.navbar-toggle {
-    z-index: 10;
+.navbar-header .name{
+    color: white;
+    position: absolute;
+    right: 45px;
+    font-size: 15px;
 }
 
-.nav-img {
-    width: 130px;
+
+header .navbar-header button.navbar-toggle {
+    z-index: 10;
+}
+header .navbar-header button[aria-expanded="true"] .icon-bar {
+    display: none;
+}
+header .navbar-header button .menu-shown {
+    display: none;
+}
+header .navbar-header button[aria-expanded="true"] .menu-shown {
+    display: inherit;
+    font-size: 25px;
+
+   
+}
+header .navbar-header button[aria-expanded="true"] .name{
+    font-size: 15px;
+    top: 15px;
+    right: 35px;
+}
+
+header .navbar-header button[aria-expanded="true"] span {
+    color:red;
+}
+
+
+.navbar-inverse .navbar-toggle{
+    border: none;
+} 
+
+.navbar-brand .nav-img {
+    width: 120px;
 }
 
 .collapse-row {
@@ -52,6 +85,14 @@ header .navbar:button.navbar-toggle {
 .navbar-fixed-top .navbar-collapse {
     max-height: none;
 }
+.navbar .row{
+    padding-top: 0;
+}
+
+.nav-xs{
+    display: none;
+}
+
 
 header .input-lg {
     width: 100%;
@@ -75,8 +116,15 @@ header .input-lg {
     border-bottom: 1px solid silver;
 }
 
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: red;
+}
+
 .navbar-default .navbar-nav>li>a {
     color: black;
+}
+.navbar-col li:first-child{
+    padding-top: 30px;
 }
 
 .navbar-col li:last-child {
@@ -152,14 +200,15 @@ button {
 .arrow img {
     height: 55px;
     position: absolute;
-    bottom: 80px;
-    left: 50%;
+    bottom: 100px;
+    left: 48%;
+
 }
 
 .astronaut {
     position: absolute;
     left: 20%;
-    bottom: 10%;
+    bottom: 5%;
     animation: myAstro linear 6s infinite;
 }
 
@@ -180,8 +229,6 @@ button {
     to   { transform: rotate(360deg) translateX(40px) rotate(-360deg); }
 }
 
-
-
 .text {
     margin: 80px 100px;
 }
@@ -197,6 +244,9 @@ button {
     width: 50%;
     float: left;
     overflow: hidden;
+}
+.img img{
+    width: 5vw;
 }
 
 .img-1 {
@@ -250,11 +300,26 @@ button {
 
 header .navbar.affix {
     background-color: white;
+    border-bottom: 1px solid silver;
 }
 
 header .navbar.affix .navbar-toggle .icon-bar {
     background-color: black;
 }
+header .navbar.affix .navbar-toggle .name{
+    color: black;
+}
+
+header .navbar .scrolled {
+    display:none;
+}
+header .navbar.affix .scrolled {
+    display:inherit;
+}
+header .navbar.affix .initial {
+    display:none;
+}
+
 
 .view-details {
     text-align: center;
@@ -570,6 +635,9 @@ footer .logo-submit img{
         width: 100%;
         height: 50vw;
     }
+    .img img{
+        width: 8vw;
+    }
     .img .row {
         height: 100%;
         padding: 120px 100px;
@@ -582,15 +650,29 @@ footer .logo-submit img{
     }
        .logo-submit {
         text-align: right;
-    }    
+    } 
+    .logo-submit {
+        text-align: center;
+
+
+    }
+
 }
 
 @media(max-width:768px) {
     .nav-col {
         display: none;
     }
+    .in {
+    padding: 0;
+}
+.navbar-nav{
+    margin-left: 0;
+
+}
     .navbar-col li {
-        padding-left: 30px;
+        padding: 35px 30px;
+
     }
     .navbar-col li:last-child {
         border-bottom: 1px solid silver;
@@ -645,6 +727,8 @@ footer .logo-submit img{
     .footer-end span {
         border-right: 0;
     }
+    
+  
 }
 
 @media(max-width:1200px) {
@@ -666,6 +750,14 @@ footer .logo-submit img{
     .img-text{
         width: 25vw;
     }
+     .logo-submit input{
+        width: 15vw;
+        font-size: 1.5vw;
+    }
+    .logo-submit .submit{
+        width: 8vw;
+    }
+
 }
 
 @media (max-width:950px) {
