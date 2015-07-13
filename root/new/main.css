@@ -1,6 +1,20 @@
+ @font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Open-sans/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+div {
+    font-family: myFirstFont;
+}
+
+
 body {
-    font-family: fantasy;
     font-size: 18px;
+    font-family: myFirstFont;
 }
 
 header {
@@ -447,12 +461,13 @@ footer a:hover{
     animation: myOrbit 6s linear infinite;
 }
 
+
 /*.background:hover .astro {
     animation: fly-up 3s;
 
-}*/
+}
 
-/*astro.jump {
+astro.jump {
     animation: fly-up 3s;
 }
 
