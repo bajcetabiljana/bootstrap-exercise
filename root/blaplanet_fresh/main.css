@@ -1,0 +1,312 @@
+@font-face {
+    font-family: Helvetica-neue;
+    src: url('FONTS/HelveticaNeueLTStd Lt.otf');
+}
+
+body {
+    font-family: Helvetica-neue;
+    background-image: linear-gradient(rgb(72, 196, 232) 0px, rgb(6, 105, 170) 19%, rgb(14, 43, 87) 43%, rgb(1, 86, 65) 71%, rgb(0, 15, 12) 100%);
+    color: white;
+}
+
+header {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.top-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.first-nav {
+    float: right;
+}
+
+header .navbar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.navbar-brand {
+    position: relative;
+    bottom: 60px;
+}
+
+.affix .navbar-brand img {
+    height: 40px;
+}
+
+.affix .navbar-brand {
+    bottom: 16px;
+}
+
+.affix.navbar {
+    top: 10px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    font-size: 40px;
+}
+
+header nav li a {
+    color: white;
+}
+
+.navbar-header button {
+    background-color: blue;
+}
+
+.navbar-toggle {
+    margin-right: 22px;
+}
+
+.navbar-toggle .icon-bar {
+    display: inline;
+    font-weight: bolder;
+}
+
+.first-nav li a {
+    font-size: 11px;
+    color: white;
+}
+
+.second-nav li a {
+    font-size: 13px;
+    font-weight: bold;
+    border-right: 3px solid green;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.second-nav li:last-child a {
+    border: none;
+}
+
+.first-nav input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.first-nav span {
+    position: relative;
+    right: 15px;
+}
+
+.online-formular{
+    padding:15px 25px;
+    width: 100%;
+
+}
+.online-formular span{
+    font-size: 17px;
+
+}
+span.titel{
+    font-size: 18px;
+    font-weight: bolder;
+}
+p.barn{
+    font-size: 12px;
+}
+.parkering{
+    color: rgb(0, 180, 160);
+}
+
+
+.online-formular input {
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+   
+}
+
+.online-formular .options div{
+    border: 1px solid silver;
+    color: black;
+    font-size: 14px;
+    background: gray;
+}
+.options{
+    display: inline-flex;
+    flex-direction:column;
+    width: 20px;
+    height: 30px;
+
+}
+.options div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.form-input {
+    display: flex;
+    align-items: center;
+    /*justify-content:space-between;*/
+}
+.form-input span {
+    margin-right: 10px;
+}
+
+
+
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    red;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+.online-formular button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(0, 180, 160);
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+.form-col{
+    margin-bottom: 15px;    
+}
+
+
+.boxinfo{
+    display: flex;
+    justify-content:center;
+    margin-top:40px;
+}
+.program {
+    height: 100%;
+}
+.program, .e-form-for-news{
+    background: rgb(0,0,40);
+    padding: 20px;
+}
+
+.oplevelser{
+    background-image: url(img/bkg.jpg);
+    
+}
+.app{
+    background-image: url(img/app.jpg);
+
+}
+.info{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200px;
+    
+
+}
+
+
+ .shopp-online {
+        width: 400px;
+        position: absolute;
+        top: 20%;
+        left: 18%;
+        background-color: rgb(60, 10, 255);    
+    }
+
+
+@media(max-width:1370px) {
+    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+        font-size: 4vw;
+        top: 20vw;
+    }
+    .carousel-indicators li, .carousel-indicators li.active {
+        width: 1vw;
+        height: 1vw;
+    }
+    .carousel-indicators li{
+        display: none;
+    }
+    
+   
+
+}
+
+@media(max-width:1000px) {
+    .navbar-toggle {
+        display: inline-block;
+        margin-right: 5px;
+        position: absolute;
+        bottom: 48px;
+        right: 0;
+    }
+    .shopp-online {
+        position: inherit;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: inline-block !important;
+    }
+    .first-nav li:nth-child(n+2) {
+        display: none;
+    }
+    .first-nav {
+        position: absolute;
+        right: 50%;
+    }
+    nav.nav-resp {
+        position: relative;
+    }
+    .navbar-brand img {
+        height: 40px;
+    }
+    .navbar-brand {
+        position: absolute;
+        left: 3%;
+    }
+    .nav-frame {
+        background: radial-gradient(blue 40%, green 10%, red);
+        height: 50px;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        right: 0;
+    }
+    
+    .boxinfo{
+        margin-top: 100px;
+    }
+
+    
+}
+
+@media(max-width:700px) {
+    .carousel-indicators li, .carousel-indicators li.active {
+        width: 6px;
+        height: 6px;
+    }
+   
+    .carousel-indicators li{
+        display: inline-block;
+    }
+    .shopp-online {
+        width:100%;
+    }
+}
+
+    
+

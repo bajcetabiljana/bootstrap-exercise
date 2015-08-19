@@ -1,271 +1,129 @@
 @font-face {
-    font-family: Helvetica-neue;
-    src: url('FONTS/HelveticaNeueLTStd Lt.otf');
-}
-
-body {
-    font-family: Helvetica-neue;
-    background-image: linear-gradient(rgb(72, 196, 232) 0px, rgb(6, 105, 170) 19%, rgb(14, 43, 87) 43%, rgb(1, 86, 65) 71%, rgb(0, 15, 12) 100%);
-    color: white;
-}
-
-header {
-    position: relative;
-}
-
-.top-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
-
-.first-nav {
-    float: right;
-}
-
-header .navbar {
-    position: fixed;
-    top: 50px;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
-
-.navbar-brand {
-    position: relative;
-    bottom: 60px;
-}
-
-.affix .navbar-brand img {
-    height: 40px;
-}
-
-.affix .navbar-brand {
-    bottom: 16px;
-}
-
-.affix.navbar {
-    top: 10px;
-}
-
-.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
-    font-size: 40px;
-}
-
-header nav li a {
-    color: white;
-}
-
-.navbar-header button {
-    background-color: blue;
-}
-
-.navbar-toggle {
-    margin-right: 22px;
-}
-
-.navbar-toggle .icon-bar {
-    display: inline;
-    font-weight: bolder;
-}
-
-.first-nav li a {
-    font-size: 11px;
-    color: white;
-}
-
-.second-nav li a {
-    font-size: 13px;
-    font-weight: bold;
-    border-right: 3px solid green;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.second-nav li:last-child a {
-    border: none;
-}
-
-.first-nav input {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-}
-
-.first-nav span {
-    position: relative;
-    right: 15px;
-}
-
-.online-formular{
-    padding:15px 25px;
-    width: 100%;
-
-}
-/*.form-input{
-    position: relative;
-}*/
-
-
-.online-formular span{
-    font-size: 17px;
-
-}
-span.titel{
-    font-size: 18px;
-    font-weight: bolder;
-}
-p.barn{
-    font-size: 12px;
-}
-.parkering{
-    color: rgb(0, 180, 160);
-}
-
-
-.online-formular input {
-    width: 60px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    padding: 4px;
+    font-family:moraDaSeKupi;
+    src: url(FONTS/FDI-Graublau-Sans-Italic-webfont.woff);
    
 }
 
-.online-formular .options div{
-    border: 1px solid silver;
-    color: black;
-    font-size: 14px;
-    background: gray;
-}
-.options{
-    display: inline-flex;
-    flex-direction:column;
-    width: 20px;
-    height: 30px;
 
-}
-.options div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
+body{
+    font-family: moraDaSeKupi;
 }
 
-.form-input {
-    display: flex;
-    align-items: center;
-    /*justify-content:space-between;*/
-}
-.form-input span {
-    margin-right: 10px;
+.navbar{
+    background-color: transparent;
 }
 
-
-
-
-
-::-webkit-input-placeholder { /* WebKit browsers */
-    color:    red;
-    text-align: center;
-    font-size: 17px;
-}
-
-
-.online-formular button {
-    width: 100%;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    background-color: rgb(0, 180, 160);
-    margin-top: 5px;
-    font-weight: bolder;
-    font-size: 18px;
-    padding: 5px;
-}
-
-
-
-.shopp-online {
-    width: 400px;
+.first-bar {
     position: absolute;
-    top: 20%;
-    left: 18%;
-    background-color: rgb(60, 10, 255);
-    z-index: 20;
+     width: 100%; 
+     margin-top: 25px;
+     z-index: 1040;
 }
-.form-col{
-    margin-bottom: 15px;    
+
+.first-bar li{
+    display: inline;
+    padding-right: 20px;
+  
+}
+.first-bar li:last-child{
+    padding: 0;
+}
+.first-bar a{
+      color: white;
+      font-size: 13px;
+}
+
+.first-bar ul {
+    margin-bottom: 0;
+}
+
+.first-bar form{
+    display: inline;
+    position: relative;
+   
+}
+.first-bar span{
+position: absolute;
+right: 0px;
+
+}
+.search-space{
+    border: none;
+    border-bottom: solid 1px white;
+    background-color: transparent;
+   text-transform: uppercase;
+   width: 80px;
+
+
+}
+.submit-btn{
+    position: absolute;
+   right: 0px;
+   top: 0;
+   z-index: 10;
+   background-color: transparent;
+   color: transparent;
+   border: none;
+
+   
+}
+.navbar-nav>li>a {
+     color: white; 
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 0px 20px; 
+}
+.nav>li>a:hover{
+    color: rgb(0,180,0);
+    background:black;
+}
+.dropdown-menu{
+     background-color: black;
+}
+.navbar-nav .dropdown-menu li{
+    border: none;
 }
 
 
-.just-space {
-    height: 500px;
+li:hover .dropdown-menu{
+    display: block;
+   
 }
 
-@media(max-width:1370px) {
-    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
-        font-size: 4vw;
-        top: 20vw;
-    }
-    .carousel-indicators li, .carousel-indicators li.active {
-        width: 1vw;
-        height: 1vw;
-    }
+.dropdown-menu>li>a{
+    color: white;
+    text-transform: capitalize;
+
+}
+.dropdown-menu>li>a:hover {
+    background-color: black;
+    color: rgb(0,180,0);
+}
+.affix img{
+    height: 40px;
+}
+.affix .nav{
+    margin-top: 20px;
 }
 
-@media(max-width:1000px) {
-    .navbar-toggle {
-        display: inline-block;
-        margin-right: 5px;
-        position: absolute;
-        bottom: 48px;
-        right: 0;
-    }
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-    .navbar-collapse.collapse.in {
-        display: inline-block !important;
-    }
-    .first-nav li:nth-child(n+2) {
-        display: none;
-    }
-    .first-nav {
-        position: absolute;
-        right: 50%;
-    }
-    nav.nav-resp {
-        position: relative;
-    }
-    .navbar-brand img {
-        height: 40px;
-    }
-    .navbar-brand {
-        position: absolute;
-        left: 3%;
-    }
-    .nav-frame {
-        background: radial-gradient(blue 40%, green 10%, red);
-        height: 50px;
-    }
-    .shopp-online {
-        top: 36%;
-        left: 25%;
-    }
+.space{
+    height: 900px;
+}
+.navbar-nav li{
+
+     border-right: solid rgb(0,180,0) 2px;
+}
+.navbar-nav li:last-child {
+    border: none;
+}
+nav.navbar:before {
+    display: none;
+}
+.nav{
+    margin-top: 60px;
+}
+.main{
+    background-image: url(img/header-slide-img.jpg);
+    height: 750px;
 }
 
-@media(max-width:700px) {
-    .carousel-indicators li, .carousel-indicators li.active {
-        width: 6px;
-        height: 6px;
-    }
-    .shopp-online {
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        margin-top: 100px;
-    }
-}
