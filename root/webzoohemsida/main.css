@@ -41,38 +41,17 @@ table {
 
 /* end reset css*/
 
+
+.section {
+    padding: 60px 0;
+    position: relative;
+}
 .container {
     margin: 0 auto;
     width: 1200px;
     max-width: 100%;
-    /* position: relative;*/
     line-height: 1.3;
     font-size: 14px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-header {
-    background: #E6E6E6;
-    position: relative;
-}
-
-h3 {
-    font-size: 30px;
-}
-
-h4 {
-    font-size: 22px;
-    font-weight: bolder;
-    color: black;
-}
-
-a {
-    color: gray;
-    text-decoration: none;
 }
 
 .row {
@@ -97,12 +76,36 @@ a {
 .col-lg-12 {
     width: 100%;
 }
+.col-md-9 {
+    width: 75%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-.section {
-    padding: 60px 0;
+header {
+    background: #E6E6E6;
     position: relative;
 }
 
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: bolder;
+    color: black;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+ul {
+    list-style-type: square;
+}
 
 .pointer {
     height: 40px;
@@ -299,14 +302,27 @@ background-repeat: no-repeat;
 .mobile-header {
     display: none;
 }
+.konsultation {
+    background-color: #E6E6E6;
+
+}
+.konsultation ul {
+    margin-left: 17px;
+}
+.konsultation .content {
+    background-color:  #e55155;
+}
+
 
 @media(max-width:1000px) {
     .col-md-12 {
         width: 100%;
     }
-    .img {
+    .img-resp{
         display: none;
     }
+    
+
 .sectionTop {
     padding: 40px;
 }
@@ -315,14 +331,17 @@ background-repeat: no-repeat;
     margin-bottom: -11px;
     padding: 0;
 }
-.weblosningar .item-text {
+.weblosningar .item-text, .designprocess .item-text {
     border-left: 1px solid silver;
 }
-.weblosningar .box, .design .box {
+.weblosningar .box, .design .box,.designprocess .box  {
     padding: 0;
 }
-.weblosningar img{
-    padding-top: 30px;
+.weblosningar img, .designprocess img {
+    padding: 30px;
+}
+{
+    padding: 30px 0;
 }
 .just-text {
     padding-bottom: 100px;
