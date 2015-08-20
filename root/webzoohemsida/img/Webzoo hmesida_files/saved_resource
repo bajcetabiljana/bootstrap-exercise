@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>listing directory /webzoohemsida/img/</title>
+    <style>* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  padding: 80px 100px;
+  font: 13px "Helvetica Neue", "Lucida Grande", "Arial";
+  background: #ECE9E9 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ECE9E9));
+  background: #ECE9E9 -moz-linear-gradient(top, #fff, #ECE9E9);
+  background-repeat: no-repeat;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 {
+  font-size: 22px;
+  color: #343434;
+}
+h1 em, h2 em {
+  padding: 0 5px;
+  font-weight: normal;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  margin-top: 10px;
+}
+h3 {
+  margin: 5px 0 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+}
+ul li {
+  list-style: none;
+}
+ul li:hover {
+  cursor: pointer;
+  color: #2e2e2e;
+}
+ul li .path {
+  padding-left: 5px;
+  font-weight: bold;
+}
+ul li .line {
+  padding-right: 5px;
+  font-style: italic;
+}
+ul li:first-child .path {
+  padding-left: 0;
+}
+p {
+  line-height: 1.5;
+}
+a {
+  color: #555;
+  text-decoration: none;
+}
+a:hover {
+  color: #303030;
+}
+#stacktrace {
+  margin-top: 15px;
+}
+.directory h1 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+ul#files {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+ul#files li {
+  float: left;
+  width: 30%;
+  line-height: 25px;
+  margin: 1px;
+}
+ul#files li a {
+  display: block;
+  height: 25px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+ul#files li a:focus,
+ul#files li a:hover {
+  background: rgba(255,255,255,0.65);
+  border: 1px solid #ececec;
+}
+ul#files li a.highlight {
+  -webkit-transition: background .4s ease-in-out;
+  background: #ffff4f;
+  border-color: #E9DC51;
+}
+#search {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 90px;
+  -webkit-transition: width ease 0.2s, opacity ease 0.4s;
+  -moz-transition: width ease 0.2s, opacity ease 0.4s;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25), inset 0px 1px 3px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.03);
+  -moz-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25), inset 0px 1px 3px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.03);
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  font: 13px "Helvetica Neue", Arial, sans-serif;
+  padding: 4px 10px;
+  border: none;
+  background: transparent;
+  margin-bottom: 0;
+  outline: none;
+  opacity: 0.7;
+  color: #888;
+}
+#search:focus {
+  width: 120px;
+  opacity: 1.0; 
+}
+
+/*views*/
+#files span {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-indent: 10px;
+}
+#files .name {
+  background-repeat: no-repeat;
+}
+#files .icon .name {
+  text-indent: 28px;
+}
+
+/*tiles*/
+.view-tiles .name {
+  width: 100%;
+  background-position: 8px 5px;
+}
+.view-tiles .size,
+.view-tiles .date {
+  display: none;
+}
+
+/*details*/
+ul#files.view-details li {
+  float: none;
+  display: block;
+  width: 90%;
+}
+ul#files.view-details li.header {
+  height: 25px;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+}
+.view-details .header {
+  border-radius: 5px;
+}
+.view-details .name {
+  width: 60%;
+  background-position: 8px 5px;
+}
+.view-details .size {
+  width: 10%;
+}
+.view-details .date {
+  width: 30%;
+}
+.view-details .size,
+.view-details .date {
+  text-align: right;
+  direction: rtl;
+}
+
+/*mobile*/
+@media (max-width: 768px) {
+  body {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 0;
+  }
+  #search {
+    position: static;
+    width: 100%;
+    font-size: 2em;
+    line-height: 1.8em;
+    text-indent: 10px;
+    border: 0;
+    border-radius: 0;
+    padding: 10px 0;
+    margin: 0;
+  }
+  #search:focus {
+    width: 100%;
+    border: 0;
+    opacity: 1;
+  }
+  .directory h1 {
+    font-size: 2em;
+    line-height: 1.5em;
+    color: #fff;
+    background: #000;
+    padding: 15px 10px;
+    margin: 0;
+  }
+  ul#files {
+    border-top: 1px solid #cacaca;
+  }
+  ul#files li {
+    float: none;
+    width: auto !important;
+    display: block;
+    border-bottom: 1px solid #cacaca;
+    font-size: 2em;
+    line-height: 1.2em;
+    text-indent: 0;
+    margin: 0;
+  }
+  ul#files li:nth-child(odd) {
+    background: #e0e0e0;
+  }
+  ul#files li a {
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    padding: 15px 10px;
+  }
+  ul#files li a:focus,
+  ul#files li a:hover {
+    border: 0;
+  }
+  #files .header,
+  #files .size,
+  #files .date {
+    display: none !important;
+  }
+  #files .name {
+    float: none;
+    display: inline-block;
+    width: 100%;
+    text-indent: 0;
+    background-position: 0 0;
+  }
+  #files .icon .name {
+    text-indent: 41px;
+  }
+}
+.view-tiles .default .name{background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC4SURBVCjPdZFbDsIgEEWnrsMm7oGGfZrohxvU+Iq1TyjU60Bf1pac4Yc5YS4ZAtGWBMk/drQBOVwJlZrWYkLhsB8UV9K0BUrPGy9cWbng2CtEEUmLGppPjRwpbixUKHBiZRS0p+ZGhvs4irNEvWD8heHpbsyDXznPhYFOyTjJc13olIqzZCHBouE0FRMUjA+s1gTjaRgVFpqRwC8mfoXPPEVPS7LbRaJL2y7bOifRCTEli3U7BMWgLzKlW/CuebZPAAAAAElFTkSuQmCC);}
+.view-details .default .name{background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC4SURBVCjPdZFbDsIgEEWnrsMm7oGGfZrohxvU+Iq1TyjU60Bf1pac4Yc5YS4ZAtGWBMk/drQBOVwJlZrWYkLhsB8UV9K0BUrPGy9cWbng2CtEEUmLGppPjRwpbixUKHBiZRS0p+ZGhvs4irNEvWD8heHpbsyDXznPhYFOyTjJc13olIqzZCHBouE0FRMUjA+s1gTjaRgVFpqRwC8mfoXPPEVPS7LbRaJL2y7bOifRCTEli3U7BMWgLzKlW/CuebZPAAAAAElFTkSuQmCC);}
+@media (max-width: 768px) {
+	#files .default .name{background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC4SURBVCjPdZFbDsIgEEWnrsMm7oGGfZrohxvU+Iq1TyjU60Bf1pac4Yc5YS4ZAtGWBMk/drQBOVwJlZrWYkLhsB8UV9K0BUrPGy9cWbng2CtEEUmLGppPjRwpbixUKHBiZRS0p+ZGhvs4irNEvWD8heHpbsyDXznPhYFOyTjJc13olIqzZCHBouE0FRMUjA+s1gTjaRgVFpqRwC8mfoXPPEVPS7LbRaJL2y7bOifRCTEli3U7BMWgLzKlW/CuebZPAAAAAElFTkSuQmCC);}
+}</style>
+    <script>
+      function $(id){
+        var el = 'string' == typeof id
+          ? document.getElementById(id)
+          : id;
+
+        el.on = function(event, fn){
+          if ('content loaded' == event) {
+            event = window.attachEvent ? "load" : "DOMContentLoaded";
+          }
+          el.addEventListener
+            ? el.addEventListener(event, fn, false)
+            : el.attachEvent("on" + event, fn);
+        };
+
+        el.all = function(selector){
+          return $(el.querySelectorAll(selector));
+        };
+
+        el.each = function(fn){
+          for (var i = 0, len = el.length; i < len; ++i) {
+            fn($(el[i]), i);
+          }
+        };
+
+        el.getClasses = function(){
+          return this.getAttribute('class').split(/\s+/);
+        };
+
+        el.addClass = function(name){
+          var classes = this.getAttribute('class');
+          el.setAttribute('class', classes
+            ? classes + ' ' + name
+            : name);
+        };
+
+        el.removeClass = function(name){
+          var classes = this.getClasses().filter(function(curr){
+            return curr != name;
+          });
+          this.setAttribute('class', classes.join(' '));
+        };
+
+        return el;
+      }
+
+      function search() {
+        var str = $('search').value
+          , links = $('files').all('a');
+
+        links.each(function(link){
+          var text = link.textContent;
+
+          if ('..' == text) return;
+          if (str.length && ~text.indexOf(str)) {
+            link.addClass('highlight');
+          } else {
+            link.removeClass('highlight');
+          }
+        });
+      }
+
+      $(window).on('content loaded', function(){
+        $('search').on('keyup', search);
+      });
+    </script>
+  </head>
+  <body class="directory">
+    <input id="search" type="text" placeholder="Search" autocomplete="off" />
+    <div id="wrapper">
+      <h1> / <a href="/webzoohemsida">webzoohemsida</a> / <a href="/webzoohemsida/img">img</a> / </h1>
+      <ul id="files" class="view-tiles"><li><a href="/webzoohemsida" class="icon directory" title=".."><span class="name">..</span><span class="size"></span><span class="date"></span></a></li>
+<li><a href="/webzoohemsida/img/01.png" class="icon default" title="01.png"><span class="name">01.png</span><span class="size">46392</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/02.png" class="icon default" title="02.png"><span class="name">02.png</span><span class="size">25882</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/07.png" class="icon default" title="07.png"><span class="name">07.png</span><span class="size">64291</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/arrow.png" class="icon default" title="arrow.png"><span class="name">arrow.png</span><span class="size">1082</span><span class="date">Mon Aug 17 2015 13:35:46</span></a></li>
+<li><a href="/webzoohemsida/img/blue_bottom_arrow_bg%20(1).png" class="icon default" title="blue_bottom_arrow_bg (1).png"><span class="name">blue_bottom_arrow_bg (1).png</span><span class="size">15559</span><span class="date">Thu Aug 20 2015 08:31:44</span></a></li>
+<li><a href="/webzoohemsida/img/blue_bottom_arrow_hover.png" class="icon default" title="blue_bottom_arrow_hover.png"><span class="name">blue_bottom_arrow_hover.png</span><span class="size">1289</span><span class="date">Mon Aug 17 2015 09:30:35</span></a></li>
+<li><a href="/webzoohemsida/img/bytbil_white.png" class="icon default" title="bytbil_white.png"><span class="name">bytbil_white.png</span><span class="size">32594</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/designprocess.png" class="icon default" title="designprocess.png"><span class="name">designprocess.png</span><span class="size">28361</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/devices.png" class="icon default" title="devices.png"><span class="name">devices.png</span><span class="size">40243</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/even_bottom_arrow.png" class="icon default" title="even_bottom_arrow.png"><span class="name">even_bottom_arrow.png</span><span class="size">1260</span><span class="date">Thu Aug 20 2015 14:00:26</span></a></li>
+<li><a href="/webzoohemsida/img/even_bottom_arrow_bg.png" class="icon default" title="even_bottom_arrow_bg.png"><span class="name">even_bottom_arrow_bg.png</span><span class="size">15449</span><span class="date">Mon Aug 17 2015 09:25:50</span></a></li>
+<li><a href="/webzoohemsida/img/expl_button_yellow.png" class="icon default" title="expl_button_yellow.png"><span class="name">expl_button_yellow.png</span><span class="size">1078</span><span class="date">Tue Aug 18 2015 13:21:34</span></a></li>
+<li><a href="/webzoohemsida/img/fasad.png" class="icon default" title="fasad.png"><span class="name">fasad.png</span><span class="size">21186</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/gray_bottom_arrow.png" class="icon default" title="gray_bottom_arrow.png"><span class="name">gray_bottom_arrow.png</span><span class="size">1287</span><span class="date">Mon Aug 17 2015 09:29:25</span></a></li>
+<li><a href="/webzoohemsida/img/gray_bottom_arrow_bg.png" class="icon default" title="gray_bottom_arrow_bg.png"><span class="name">gray_bottom_arrow_bg.png</span><span class="size">15600</span><span class="date">Thu Aug 20 2015 13:54:33</span></a></li>
+<li><a href="/webzoohemsida/img/green_bottom_arrow_bg.png" class="icon default" title="green_bottom_arrow_bg.png"><span class="name">green_bottom_arrow_bg.png</span><span class="size">15559</span><span class="date">Mon Aug 17 2015 09:27:32</span></a></li>
+<li><a href="/webzoohemsida/img/green_bottom_arrow_hover.png" class="icon default" title="green_bottom_arrow_hover.png"><span class="name">green_bottom_arrow_hover.png</span><span class="size">1289</span><span class="date">Mon Aug 17 2015 09:32:34</span></a></li>
+<li><a href="/webzoohemsida/img/head_front.png" class="icon default" title="head_front.png"><span class="name">head_front.png</span><span class="size">594447</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/header.png" class="icon default" title="header.png"><span class="name">header.png</span><span class="size">594447</span><span class="date">Sat Aug 15 2015 10:15:18</span></a></li>
+<li><a href="/webzoohemsida/img/icon.png" class="icon default" title="icon.png"><span class="name">icon.png</span><span class="size">2442</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_1(1).png" class="icon default" title="icon_1(1).png"><span class="name">icon_1(1).png</span><span class="size">17418</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_1(2).png" class="icon default" title="icon_1(2).png"><span class="name">icon_1(2).png</span><span class="size">16816</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_1.png" class="icon default" title="icon_1.png"><span class="name">icon_1.png</span><span class="size">2163</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_2(1).png" class="icon default" title="icon_2(1).png"><span class="name">icon_2(1).png</span><span class="size">17393</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_2(2).png" class="icon default" title="icon_2(2).png"><span class="name">icon_2(2).png</span><span class="size">17570</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_2.png" class="icon default" title="icon_2.png"><span class="name">icon_2.png</span><span class="size">2574</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_3(1).png" class="icon default" title="icon_3(1).png"><span class="name">icon_3(1).png</span><span class="size">17600</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_3(2).png" class="icon default" title="icon_3(2).png"><span class="name">icon_3(2).png</span><span class="size">17636</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_3.png" class="icon default" title="icon_3.png"><span class="name">icon_3.png</span><span class="size">2434</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_4(1).png" class="icon default" title="icon_4(1).png"><span class="name">icon_4(1).png</span><span class="size">17095</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_4(2).png" class="icon default" title="icon_4(2).png"><span class="name">icon_4(2).png</span><span class="size">17154</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_4.png" class="icon default" title="icon_4.png"><span class="name">icon_4.png</span><span class="size">2583</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_5.png" class="icon default" title="icon_5.png"><span class="name">icon_5.png</span><span class="size">17772</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/icon_6.png" class="icon default" title="icon_6.png"><span class="name">icon_6.png</span><span class="size">17936</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/info_icon(1).png" class="icon default" title="info_icon(1).png"><span class="name">info_icon(1).png</span><span class="size">17280</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/info_icon(2).png" class="icon default" title="info_icon(2).png"><span class="name">info_icon(2).png</span><span class="size">17703</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/info_icon(3).png" class="icon default" title="info_icon(3).png"><span class="name">info_icon(3).png</span><span class="size">18237</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/info_icon.png" class="icon default" title="info_icon.png"><span class="name">info_icon.png</span><span class="size">18078</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/logo.png" class="icon default" title="logo.png"><span class="name">logo.png</span><span class="size">12948</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/logo_foretagarna_malmo1.png" class="icon default" title="logo_foretagarna_malmo1.png"><span class="name">logo_foretagarna_malmo1.png</span><span class="size">7577</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/logo_white.png" class="icon default" title="logo_white.png"><span class="name">logo_white.png</span><span class="size">23912</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/prod_1.png" class="icon default" title="prod_1.png"><span class="name">prod_1.png</span><span class="size">29105</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/prod_2.png" class="icon default" title="prod_2.png"><span class="name">prod_2.png</span><span class="size">29514</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/prod_3.png" class="icon default" title="prod_3.png"><span class="name">prod_3.png</span><span class="size">28958</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/proj_plan_button.png" class="icon default" title="proj_plan_button.png"><span class="name">proj_plan_button.png</span><span class="size">1125</span><span class="date">Thu Aug 20 2015 13:42:41</span></a></li>
+<li><a href="/webzoohemsida/img/pyramid_white.png" class="icon default" title="pyramid_white.png"><span class="name">pyramid_white.png</span><span class="size">31307</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/visma_white.png" class="icon default" title="visma_white.png"><span class="name">visma_white.png</span><span class="size">33313</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/vitec_white.png" class="icon default" title="vitec_white.png"><span class="name">vitec_white.png</span><span class="size">41837</span><span class="date">Sat Aug 15 2015 09:24:36</span></a></li>
+<li><a href="/webzoohemsida/img/white_bottom_arrow.png" class="icon default" title="white_bottom_arrow.png"><span class="name">white_bottom_arrow.png</span><span class="size">1260</span><span class="date">Mon Aug 17 2015 09:31:39</span></a></li>
+<li><a href="/webzoohemsida/img/white_top_arrow_bg.png" class="icon default" title="white_top_arrow_bg.png"><span class="name">white_top_arrow_bg.png</span><span class="size">15980</span><span class="date">Mon Aug 17 2015 09:26:46</span></a></li></ul>
+    </div>
+  </body>
+</html>

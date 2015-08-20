@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://localhost:8000/webzoohemsida/index.html -->
+<html lang="en" class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Webzoo hmesida</title>
+        <link rel="stylesheet" href="http://localhost:8000/webzoohemsida/main.css">
+        <link href="./Webzoo hmesida_files/css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+(function(){
+/*
+ * simple-autoreload-server v0.0.13 - 2015-02-13
+ * <https://github.com/cytb/simple-autoreload-server>
+ *
+ * Copyright (c) 2015 cytb
+ *
+ * Licensed under the MIT License.
+ * <http://www.opensource.org/licenses/mit-license.php>
+ */
+
+function partialize$(a,b,c){var d=this;return function(){var e,f=slice$.call(arguments),g=f.length,h=c.length,i=b?b.concat():[],j=c?c.concat():[];for(e=0;g>e;++e)i[j[0]]=f[e],j.shift();return h>g&&g?partialize$.apply(d,[a,i,j]):a.apply(d,i)}}var slice$=[].slice,toString$={}.toString,split$="".split;!function(){var a,b,c,d,e,f,g,h,i,j,k;return a=function(b){var c;return c=slice$.call(b),c.reduce(function(b,c){return b.concat("Array"===toString$.call(c).slice(8,-1)&&a(c)||[c])},[])},b=function(a){return document.getElementsByTagName(a)[0]},c=function(a,b){return a.appendChild(document.createElement(b))},d=function(a){return a.parentNode.removeChild(a)},e=function(a){var b,c,d,e,f,g,h,i;for(b=document.createElement(a.tagName.toLowerCase()),c=0,e=(d=a.attributes).length;e>c;++c)f=d[c],g=f.nodeValue,h=f.nodeName,b.setAttribute(h,g);for(c=0,e=(d=a.childNodes).length;e>c;++c)i=d[c],b.appendChild(i);return b},f=function(a,e){var f,g,h,i,j;return f=function(a){var b;return b=document.createElement("a"),b.href=a,b.href},g=function(a,b,c){var d,e;return d=a.href,a.href=b,e=f(c),a.href=d,e},h=b("base"),i=h||c(document.head||b("head"),"base"),j=g(i,a,e),null!=h&&d(i),j},g=function(){function a(b){var e,f,h,i,j,k;if(this.constructor!==a)return b&&new a(b);for(this.source=b,this.relPath=c(b,/(\?|#)(.*)$/),this.absPath=g(this.relPath),this.absDir=d(this.absPath),this.isDir=/\/$/.exec(this.absPath),this.hash=null!=(e=null!=(f=/\#(.*)$/.exec(b))?f[1]:void 0)?e:"",this.queryString=null!=(e=null!=(f=/\?([^#]*)/.exec(b))?f[1]:void 0)?e:"",this.params={},h=0,i=(e=split$.call(this.queryString,"&")).length;i>h;++h)j=e[h],(k=/([^=]+)(?:=(.*))?$/.exec(j))&&(this.params[k[1]]=k[2])}a.displayName="Path";var c,d,e,g,h=a.prototype;return c=function(a,b){var c;return(c=b.exec(a))?a.slice(0,c.index):a},d=partialize$.apply(a,[c,[void 0,/\/[^/]+\/?$/],[0]]),e=function(a){return c(a,/\/[^/]*$/)+"/"},g=function(a){var c,d;return c=(null!=(d=b("base"))?d.href:void 0)||e(location.pathname),f(c,a)},h.includes=function(b){switch(!1){case null!=b:return!1;case b.constructor===this.constructor:return this.includes(new a(b));case!this.isDir:return b.absPath.indexOf(0===_)(this.absPath);default:return function(a){return b.absPath===a}(this.absPath)}},h.toQueryString=function(){var a,b;return function(){var c,d=[];for(a in c=this.params)b=c[a],d.push(a+"="+(null!=b?b:""));return d}.call(this).join("&")},h.toString=function(){var a,b,c;return a=(b=this.toQueryString())?"?"+b:"",c=(b=this.hash)?"#"+b:"",this.relPath+""+a+c},a}(),h=function(b){var c,d,f,h,i,j,k;return c="_tsAccessed",d=g(b.path),f=function(){var b;return b=slice$.call(arguments),a(a(b).map(function(a){return[].slice.call(document.getElementsByTagName(a))}))},h=function(a,c){var e,h,i;return e=function(){var b,d,e,j,k,l,m=[];for(b=0,e=(d=f(a)).length;e>b;++b)for(h=d[b],j=0,l=(k=c).length;l>j;++j)i=k[j],m.push({elem:h,attr:i,path:g(h.getAttribute(i)),set:partialize$.apply(h,[h.setAttribute,[i,void 0],[1]])});return m}().filter(function(a){var b;return b=a.path,d.includes(b)}),0<e.length&&b.forceReload?(location.reload(),[]):e},i=function(a,b,d){return console.debug(a,b.toString()),b.params[c]=Date.now(),d(b.toString())},j=function(a){var b,c,d,e,f,g,j,k=[];for(b=slice$.call(arguments,1),c=0,e=(d=h(a,b)).length;e>c;++c)f=d[c],g=f.path,j=f.set,k.push(i("refresh",g,j));return k},k=function(a){var b,c,d,f,g,j,k,l,m,n,o,p=[];for(b=slice$.call(arguments,1),c=0,f=(d=h(a,b)).length;f>c;++c)g=d[c],j=g.elem,k=g.attr,l=g.path,m=e(j),n=partialize$.apply(m,[m.setAttribute,[k,void 0],[1]]),i("reinsert",l,n),o=j.parentNode,o.insertBefore(m,j),o.removeChild(j),p.push(o);return p},g(location.pathname).absPath===d.absPath&&location.reload(),j(["link"],"href"),j(["audio","img","video","embed","object"],"src"),k(["script"],"src")},i="undefined"!=typeof WebSocket&&null!==WebSocket?WebSocket:"undefined"!=typeof MozWebSocket&&null!==MozWebSocket?MozWebSocket:function(){throw new Error("Autoreload Client - WebSocket is not available on this browser.")},j=window.location,k=new i("ws://"+j.host+j.pathname+"/ws"),k.onopen=function(){return console.log("Autoreload Client - connected to server.")},k.onmessage=function(a){var b,c;return b=a.data,console.debug("message from server",b),c=JSON.parse(b),c&&function(){switch(c.type){case"update":return h(c)}}()},k}();})();
+</script></head>
+    <body>
+        <header>
+            <div class="container">
+                <img src="./Webzoo hmesida_files/header.png" alt="header img">
+            </div>
+            <div class="pointer pointer-white">
+                <div class="arrow arrow-gray"></div>
+            </div>
+        </header>
+        <div class="weblosningar section mobile-show">        
+            <div onclick="$(&#39;.weblosningar&#39;).toggleClass(&#39;mobile-show&#39;)" class="mobile-header">Webblösningar</div>
+
+            
+
+            <div class="container xs-collapsed">
+            <div class="closebutton">
+            <div class="xs-collapsed close" onclick="$(&#39;.weblosningar&#39;).toggleClass(&#39;mobile-show&#39;)">Stäng</div>
+            </div>
+                <div class="top row">
+                    <div class=" col col-lg-3 col-md-12 info">
+                        <div class="content">
+                            <div class="img img-resp">
+                                <img class="prod-img" src="./Webzoo hmesida_files/07.png" alt="keyboard">
+                                <img class="sign" src="./Webzoo hmesida_files/info_icon.png" alt="sign">
+                            </div>
+                            <div class="text">
+                                <h3>Webblösningar som uppfyller era behov.</h3>
+                                Webzoo skräddarsyr er lösning utefter era önskemål och krav. Oavsett om det grundar sig i enklare lösning för text och bildhantering, webbshop eller en mer komplex lösning så hittar Webzoo rätt lösning för just dig.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-12  sectionTop">
+                        <a href="http://localhost:8000/webzoohemsida/index.html#">
+                        <img src="./Webzoo hmesida_files/prod_1.png" alt="img">
+                        <div class="title">
+                            <p>
+                            Hemsida</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col col-lg-3 col-md-12  sectionTop">
+                        <a href="http://localhost:8000/webzoohemsida/index.html#">
+                        <img src="./Webzoo hmesida_files/prod_2.png" alt="img">
+                        <div class="title">
+                            <p>
+                            Hemsida</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col col-lg-3 col-md-12  sectionTop">
+                        <a href="http://localhost:8000/webzoohemsida/index.html#">
+                        <img src="./Webzoo hmesida_files/prod_3.png" alt="img">
+                        <div class="title">
+                            <p>
+                            Hemsida</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="bottom row">
+                    <div class="col col-lg-3 col-md-12 sectionBottom">
+                        <div class="box">
+                            <div class="icon"><img src="./Webzoo hmesida_files/icon_1.png" alt="icon"></div>
+                            <div class="item-text">
+                                <div>
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.</p>
+                                </div>
+                                <div class="readMore"><a href="http://localhost:8000/webzoohemsida/index.html#">Läs mer</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-12 sectionBottom">
+                        <div class="box">
+                            <div><img src="./Webzoo hmesida_files/icon_2.png" alt="icon"></div>
+                            <div class="item-text">
+                                <div>
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.</p>
+                                </div>
+                                <div class="readMore"><a href="http://localhost:8000/webzoohemsida/index.html#">Läs mer</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-12 sectionBottom">
+                        <div class="box">
+                            <div><img src="./Webzoo hmesida_files/icon_3.png" alt="icon"></div>
+                            <div class="item-text">
+                                <div>
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.</p>
+                                </div>
+                                <div class="readMore"><a href="http://localhost:8000/webzoohemsida/index.html#">Läs mer</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-12 sectionBottom">
+                        <div class="box">
+                            <div><img src="./Webzoo hmesida_files/icon_4.png" alt="icon"></div>
+                            <div class="item-text">
+                                <div>
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.</p>
+                                </div>
+                                <div class="readMore"><a href="http://localhost:8000/webzoohemsida/index.html#">Läs mer</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pointer pointer-gray "><div class="arrow arrow-blue"></div></div>
+
+        </div>
+        <!-- end off div.weblosningar -->
+        <div class="design section">
+         <div onclick="$(&#39;.design&#39;).toggleClass(&#39;mobile-show&#39;)" class="mobile-header">följsam design</div>
+            <div class="xs-collapsed close" onclick="$(&#39;.design&#39;).toggleClass(&#39;mobile-show&#39;)">Stäng</div>
+            <div class="container xs-collapsed">
+                <div class="row top">
+                    <div class="col col-lg-3 col-md-12 info">
+                        <div class="content">
+                            <div class="img img-resp">
+                                <img class="prod-img" src="./Webzoo hmesida_files/02.png" alt="keyboard">
+                                <img class="sign" src="./Webzoo hmesida_files/info_icon(1).png" alt="sign">
+                            </div>
+                            <div class="text">
+                                <h3>  Följsam design</h3>
+                                <p>
+                                Idag behöver webben fungera lika bra i mobilen på stan, som på surfplattan och datorn hemma i soffan. Det kräver nya sätta att såväl tänka som att göra. Rådfråga gärna oss på Webzoo vi finns tillhands att svara på just dina frågor om mobila lösningar för dina behov.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-9">
+                        <div>
+                            <img src="./Webzoo hmesida_files/devices.png" alt="devices">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom row">
+                    <div class="col col-lg-3 col-md-12 sectionBottom">
+                        <div class="box">
+                            <div><img src="./Webzoo hmesida_files/icon_3(1).png" alt="icon"></div>
+                            <div class="item-text">
+                                <div class="just-text">
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.</p>
+                                </div>
+                                <div class="readMore"><a href="http://localhost:8000/webzoohemsida/index.html#">Läs mer</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-12 sectionBottom">
+                        <div class="box">
+                            <div>
+                                <img src="./Webzoo hmesida_files/icon_4(1).png" alt="icon">
+                            </div>
+                            <div class="item-text">
+                                <div class="just-text">
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.</p>
+                                </div>
+                                <div class="readMore"><a href="http://localhost:8000/webzoohemsida/index.html#">Läs mer</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-12 sectionBottom">
+                        <div class="box">
+                            <div>
+                            <img src="./Webzoo hmesida_files/icon_1(1).png" alt="icon"></div>
+                            <div class="item-text">
+                                <div class="just-text">
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.
+                                    </p>
+                                </div>
+                                <div class="readMore"><a href="http://localhost:8000/webzoohemsida/index.html#">Läs mer</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-12 sectionBottom">
+                        <div class="box">
+                            <div>
+                            <img src="./Webzoo hmesida_files/icon_2(1).png" alt="icon"></div>
+                            <div class="item-text">
+                                <div class="just-text">
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.</p>
+                                </div>
+                                <div class="readMore"><a href="http://localhost:8000/webzoohemsida/index.html#">Läs mer</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pointer pointer-white">
+                <div class="arrow arrow-gray"></div>
+            </div>
+        </div>
+        <!-- end off design -->
+        <div class="designprocess section">
+        <div onclick="$(&#39;.designprocess&#39;).toggleClass(&#39;mobile-show&#39;)" class="mobile-header">designexpertis</div>
+            <div class="xs-collapsed close" onclick="$(&#39;.designprocess&#39;).toggleClass(&#39;mobile-show&#39;)">Stäng</div>
+
+            <div class="container xs-collapsed">
+                <div class="row top">
+                    <div class="col col-lg-12">
+                        <div class="box-title">
+                            <div class="img img-resp">
+                                <img src="./Webzoo hmesida_files/01.png" alt="img">
+                                <img class="sign" src="./Webzoo hmesida_files/info_icon(2).png" alt="sign">
+                            </div>
+                            <div class="title">
+                                <h3>Desigexpertis &amp; <br> Designprocess</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row middle">
+                    <div class="col">
+                        <div class="img">
+                            <img src="./Webzoo hmesida_files/designprocess.png" alt="table">
+                        </div>
+                    </div>
+                </div>
+                <div class="row bottom">
+                    <div class="bottom row">
+                        <div class="col col-lg-3 col-md-12 sectionBottom">
+                            <div class="box">
+                                <div><img src="./Webzoo hmesida_files/icon.png" alt="icon"></div>
+                                <div class="item-text">
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-12 sectionBottom">
+                            <div class="box">
+                                <div>
+                                    <img src="./Webzoo hmesida_files/icon.png" alt="icon">
+                                </div>
+                                <div class="item-text">
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-12 sectionBottom">
+                            <div class="box">
+                                <div>
+                                <img src="./Webzoo hmesida_files/icon.png" alt="icon"></div>
+                                <div class="item-text">
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-12 sectionBottom">
+                            <div class="box">
+                                <div>
+                                <img src="./Webzoo hmesida_files/icon.png" alt="icon"></div>
+                                <div class="item-text">
+                                    <h4>CMS Backoffice 3.0</h4>
+                                    <p>
+                                    Webzoos egenutvecklade uppdateringsverktyg. En produkt som levereras tillsammans med din nyutvecklade hemsida och ger dig möjligheten att i en modern arbetsmiljö på egen hand administrera din hemsida.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pointer pointer-gray">
+                <div class="arrow arrow-blue"></div>
+            </div>
+        </div>
+        <!-- end designprocess -->
+        <div class="konsultation section">
+        <div class="weblosningar section mobile-show">        
+            <div onclick="$(&#39;.konsultation&#39;).toggleClass(&#39;mobile-show&#39;)" class="mobile-header">konsultation</div>
+          
+            <div class="xs-collapsed close" onclick="$(&#39;.konsultation&#39;).toggleClass(&#39;mobile-show&#39;)">Stäng</div>
+
+            <div class="container xs-collapsed">
+                <div class="row responsive">
+                    <div class="col col-lg-3 col-md-12 info">
+                        <div class="content">
+                            <div class="img img-resp">
+                                <img class="prod-img" src="./Webzoo hmesida_files/02.png" alt="planet">
+                                <img class="sign" src="./Webzoo hmesida_files/info_icon(3).png" alt="sign">
+                            </div>
+                            <div class="text">
+                                <h3>Konsultation</h3>
+                                IDå den digitala världen förändras ständigt så kan det vara svårt för varje enskilt företag att vara uppdaterad på vad som är de nya trenderna och hur man mest effektivt får ut mest av sin digitala marknadsföring så som hemsida, webshop, applikationer eller annan digital lösning. Tveka inte att kontakta oss på Webzoo vi är din mellanhand i den digitala världen.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-9 col-md-12">
+                        <div class="row">
+                            <div class="col sectionBottom col-lg-4 col-md-12">
+                                <div class="box">
+                                    <div>
+                                        <img src="./Webzoo hmesida_files/icon_1(2).png" alt="icon">
+                                    </div>
+                                    <div class="item-text">
+                                        <h4>Responsive web
+                                        </h4>
+                                        <ul>
+                                            <li>Ser över din verksamhet
+                                            </li>
+                                            <li>Vad kan effektiviseras på webben</li>
+                                            <li>Visioner med nytt projekt</li>
+                                            <li>Hur arbetar ni på webben idag</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col sectionBottom col-lg-4 col-md-12">
+                                <div class="box">
+                                    <div>
+                                        <img src="./Webzoo hmesida_files/icon_1(2).png" alt="icon">
+                                    </div>
+                                    <div class="item-text">
+                                        <h4>Responsive web
+                                        </h4>
+                                        <ul>
+                                            <li>Ser över din verksamhet
+                                            </li>
+                                            <li>Vad kan effektiviseras på webben</li>
+                                            <li>Visioner med nytt projekt</li>
+                                            <li>Hur arbetar ni på webben idag</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col sectionBottom col-lg-4 col-md-12">
+                                <div class="box">
+                                    <div>
+                                        <img src="./Webzoo hmesida_files/icon_1(2).png" alt="icon">
+                                    </div>
+                                    <div class="item-text">
+                                        <h4>Responsive web
+                                        </h4>
+                                        <ul>
+                                            <li>Ser över din verksamhet
+                                            </li>
+                                            <li>Vad kan effektiviseras på webben</li>
+                                            <li>Visioner med nytt projekt</li>
+                                            <li>Hur arbetar ni på webben idag</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col sectionBottom col-lg-4 col-md-12 ">
+                                <div class="box">
+                                    <div>
+                                        <img src="./Webzoo hmesida_files/icon_1(2).png" alt="icon">
+                                    </div>
+                                    <div class="item-text">
+                                        <h4>Responsive web
+                                        </h4>
+                                        <ul>
+                                            <li>Ser över din verksamhet
+                                            </li>
+                                            <li>Vad kan effektiviseras på webben</li>
+                                            <li>Visioner med nytt projekt</li>
+                                            <li>Hur arbetar ni på webben idag</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col sectionBottom col-lg-4 col-md-12">
+                                <div class="box">
+                                    <div>
+                                        <img src="./Webzoo hmesida_files/icon_1(2).png" alt="icon">
+                                    </div>
+                                    <div class="item-text">
+                                        <h4>Responsive web
+                                        </h4>
+                                        <ul>
+                                            <li>Ser över din verksamhet
+                                            </li>
+                                            <li>Vad kan effektiviseras på webben</li>
+                                            <li>Visioner med nytt projekt</li>
+                                            <li>Hur arbetar ni på webben idag</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col sectionBottom col-lg-4 col-md-12">
+                                <div class="box">
+                                    <div>
+                                        <img src="./Webzoo hmesida_files/icon_1(2).png" alt="icon">
+                                    </div>
+                                    <div class="item-text">
+                                        <h4>Responsive web
+                                        </h4>
+                                        <ul>
+                                            <li>Ser över din verksamhet
+                                            </li>
+                                            <li>Vad kan effektiviseras på webben</li>
+                                            <li>Visioner med nytt projekt</li>
+                                            <li>Hur arbetar ni på webben idag</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pointer pointer-blue">
+                <div class="arrow arrow-gray"></div>
+            </div>
+        </div>
+        <!-- end konsultation -->
+        <div class="projektplaneraren section">
+        <div onclick="$(&#39;.projektplaneraren&#39;).toggleClass(&#39;mobile-show&#39;)" class="mobile-header">projektplaneraren</div>
+          
+            <div class="xs-collapsed close" onclick="$(&#39;.projektplaneraren&#39;).toggleClass(&#39;mobile-show&#39;)">Stäng</div>
+            <div class="container xs-collapsed">
+                <div class="row top">
+                    <div class="col col-lg-12 sectionTop">
+                        <h3>projectplaneraren</h3>
+                    </div>
+                </div>
+                <div class="row middle planer">
+                    <div class="col col-lg-3 col-md-12">
+                        <h4>Kontaktinformation</h4>
+                        <div class="form selections">
+                            <form action="http://localhost:8000/webzoohemsida/index.html#">
+                                <p>namn:</p>
+                                <input class="selection" type="text">
+                                <p>företag:</p>
+                                <input class="selection" type="text">
+                                <p>E-post:</p>
+                                <input class="selection" type="text">
+                                <p>telefon:</p>
+                                <input class="selection" type="text">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-12">
+                        <h4> I behov av </h4>
+                        &nbsp;                        
+                        <div class="selections behov">
+                            <a href=""><div>hemsida</div></a>
+                            <a href=""><div>produkthantering</div></a>
+                            <a href=""><div>webshop</div></a>
+                            <a href=""><div>CMS/Uppdateringsverkyg</div></a>
+                            <a href=""><div>responsive web</div></a>
+                            <a href=""><div>applikation</div></a>
+                            <a href=""><div>kopplaaffärssystem</div></a>
+                            <a href=""><div>nyhetsbrev</div></a>
+                            <a href=""><div>konsultation</div></a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-12 selections">
+                        <h4>Tidsplanering</h4>
+                        <p>Start:</p>
+                        <input type="text">
+                        <a href="http://localhost:8000/webzoohemsida/index.html#"><div>När som helst</div></a>
+                        <p>Lansering</p>
+                        <input type="text">
+                        <a href="http://localhost:8000/webzoohemsida/index.html#"><div>När som helst</div></a>
+                        
+                    </div>
+                    <div class="col col-lg-3 col-md-12 selections">
+                        <h4>Budget för projektet</h4>
+                        &nbsp;
+                        <a href=""><div>Under ca 30.000 SEK</div></a>
+                        <a href=""><div>30.000 - 50.000 SEK</div></a>
+                        <a href=""><div>Under ca 30.000 SEK</div></a>
+                        <a href=""><div>Under ca 30.000 SEK</div></a>
+                        <a href=""><div>Under ca 30.000 SEK</div></a>
+                        <a href=""><div>Under ca 30.000 SEK</div></a>
+
+                    </div>
+                </div>
+                <div class="row rowBottom">
+                    <div class="col col-lg-12">
+                        <div class="sub">
+                            <input type="submit" name="submit" value="Skicka förfrågan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pointer pointer-gray-2">
+                <div class="arrow arrow-white"></div>
+            </div>
+        </div>
+        <!-- end projectplaneraren -->
+        <footer>
+            <div class="container">
+                <div class="vi">VI ARBETAR MED   /   VI INTEGRERAR MED   /   VI SAMMARBETAR MED   /   VI STÖDJER</div>
+            </div>
+            <div class="partners">
+                <img src="./Webzoo hmesida_files/saved_resource" alt="logo">
+                <img src="./Webzoo hmesida_files/saved_resource" alt="logo">
+                <img src="./Webzoo hmesida_files/saved_resource" alt="logo">
+                <img src="./Webzoo hmesida_files/saved_resource" alt="logo">
+                <img src="./Webzoo hmesida_files/saved_resource" alt="logo">
+
+            </div>
+        </footer>
+    </div>
+    <script src="./Webzoo hmesida_files/jquery.min.js"></script>
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
