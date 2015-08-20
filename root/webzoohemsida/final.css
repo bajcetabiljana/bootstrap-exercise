@@ -59,8 +59,12 @@ body {
 }
 
 .row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 }
 
 .col {
@@ -126,9 +130,15 @@ ul {
     margin: 0 auto;
     left: 0;
     right: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .pointer-white {
@@ -178,7 +188,9 @@ ul {
 }
 
 .top {
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .bottom {
@@ -244,8 +256,12 @@ ul {
 }
 
 .box {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 70px;
     border-top: 1px solid silver;
@@ -305,6 +321,8 @@ ul {
 
 .box-title {
     background-color: #41B3DE;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     height: 120px;
 }
@@ -332,7 +350,7 @@ ul {
 }
 
 .konsultation, .design {
-    background-color: #E9EBEB;
+    background-color: #E6E6E6;
 }
 
 .projektplaneraren {
@@ -367,8 +385,12 @@ input {
 }
 
 .behov {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 }
 
 .behov div {
@@ -383,9 +405,15 @@ input {
     box-sizing: border-box;
     padding: 0 8px;
     margin-bottom: 10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border: none;
 }
 
@@ -442,7 +470,9 @@ footer img {
 }
 
 footer .partners {
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .closebutton {
@@ -543,12 +573,20 @@ footer .partners {
         line-height: 0;
     }
     .closebutton {
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
     }
     .mobile-show .close {
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         background: #41B3DE;
         color: white;
         width: 60px;
@@ -561,3 +599,4 @@ footer .partners {
         width: 33%;
     }
 }
+/*# sourceMappingURL=main.css.map */
