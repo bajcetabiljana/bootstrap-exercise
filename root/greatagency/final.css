@@ -60,9 +60,10 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 a {
     text-decoration: none;
-     color: white;
+    color: white;
 }
 
 .section {
@@ -140,8 +141,6 @@ h3 {
         -ms-flex-pack: center;
             justify-content: center;
 }
-
-
 
 .container2 a {
     width: 100%;
@@ -289,74 +288,51 @@ button {
 .formular .col {
     width: 330px;
 }
- footer {
+
+footer {
     margin-top: 140px;
-    background-color: #33E836
- }
-
- .footerImg {
-    width: 100%;
-    height: 300px;
- }
- .information {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; 
+    background-color: #33E836;
     color: white;
- }
- .footerLogo {
-    width: 30%;
+}
 
- }
-.contact {
+.footerImg {
+    width: 100%;
+}
+
+.footerLogo {
+    width: 290px;
+    padding-bottom: 40px;
+    margin: auto;
+}
+
+footer .row {
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+}
+
+
+.contact .col {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-}
-.contact a {
-    border: 2px solid white;
-    width: 300px;
-    height: 20px;
+    border: 3px solid white;
     background-image: url(img/arrow2.png );
-    background-size: 50px;
     background-repeat: no-repeat;
     background-position: right;
-    margin: 40px 10px;
+    text-align: left;
     padding: 10px 15px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content:left;
-        -ms-flex-pack:left;
-            justify-content:left;
-    -webkit-flex-flow:wrap;
-        -ms-flex-flow:wrap;
-            flex-flow:wrap;
-}
-.contact a:nth-child(2) { 
-    height: 70px;
-
+    margin: 2vw 3vw;
 }
 
-
-
-
-
+.copyright {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 16px;
+}
 
 @media (max-width: 1240px) {
     .formular {
@@ -380,6 +356,22 @@ button {
     }
     .formular .col-xs-12 {
         width: 100%;
+        margin: 60px 3vw;
+        margin-top: 0;
+
+    }
+   
+    .formular button {
+        margin-top: 20px;
+    }
+    footer .row {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .contact .col-md-12 {
+        width: 100%;
+        margin: 1vw 3vw;
     }
 }
 
