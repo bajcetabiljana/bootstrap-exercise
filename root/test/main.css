@@ -1,0 +1,14 @@
+* {
+    box-sizing:border-box;
+}
+div.box{
+    display: flex;
+    flex-wrap:wrap;
+    width: 150px;
+}
+
+div.small {
+    border:2px solid black;
+    margin-right:-2px;
+    margin-bottom: -2px;
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://localhost:8000/greatagency/index.html# -->
+<html lang="en" class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Greatagency Homepage</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://localhost:8000/greatagency/final.css">
+    <script type="text/javascript">
+(function(){
+/*
+ * simple-autoreload-server v0.0.13 - 2015-02-13
+ * <https://github.com/cytb/simple-autoreload-server>
+ *
+ * Copyright (c) 2015 cytb
+ *
+ * Licensed under the MIT License.
+ * <http://www.opensource.org/licenses/mit-license.php>
+ */
+
+function partialize$(a,b,c){var d=this;return function(){var e,f=slice$.call(arguments),g=f.length,h=c.length,i=b?b.concat():[],j=c?c.concat():[];for(e=0;g>e;++e)i[j[0]]=f[e],j.shift();return h>g&&g?partialize$.apply(d,[a,i,j]):a.apply(d,i)}}var slice$=[].slice,toString$={}.toString,split$="".split;!function(){var a,b,c,d,e,f,g,h,i,j,k;return a=function(b){var c;return c=slice$.call(b),c.reduce(function(b,c){return b.concat("Array"===toString$.call(c).slice(8,-1)&&a(c)||[c])},[])},b=function(a){return document.getElementsByTagName(a)[0]},c=function(a,b){return a.appendChild(document.createElement(b))},d=function(a){return a.parentNode.removeChild(a)},e=function(a){var b,c,d,e,f,g,h,i;for(b=document.createElement(a.tagName.toLowerCase()),c=0,e=(d=a.attributes).length;e>c;++c)f=d[c],g=f.nodeValue,h=f.nodeName,b.setAttribute(h,g);for(c=0,e=(d=a.childNodes).length;e>c;++c)i=d[c],b.appendChild(i);return b},f=function(a,e){var f,g,h,i,j;return f=function(a){var b;return b=document.createElement("a"),b.href=a,b.href},g=function(a,b,c){var d,e;return d=a.href,a.href=b,e=f(c),a.href=d,e},h=b("base"),i=h||c(document.head||b("head"),"base"),j=g(i,a,e),null!=h&&d(i),j},g=function(){function a(b){var e,f,h,i,j,k;if(this.constructor!==a)return b&&new a(b);for(this.source=b,this.relPath=c(b,/(\?|#)(.*)$/),this.absPath=g(this.relPath),this.absDir=d(this.absPath),this.isDir=/\/$/.exec(this.absPath),this.hash=null!=(e=null!=(f=/\#(.*)$/.exec(b))?f[1]:void 0)?e:"",this.queryString=null!=(e=null!=(f=/\?([^#]*)/.exec(b))?f[1]:void 0)?e:"",this.params={},h=0,i=(e=split$.call(this.queryString,"&")).length;i>h;++h)j=e[h],(k=/([^=]+)(?:=(.*))?$/.exec(j))&&(this.params[k[1]]=k[2])}a.displayName="Path";var c,d,e,g,h=a.prototype;return c=function(a,b){var c;return(c=b.exec(a))?a.slice(0,c.index):a},d=partialize$.apply(a,[c,[void 0,/\/[^/]+\/?$/],[0]]),e=function(a){return c(a,/\/[^/]*$/)+"/"},g=function(a){var c,d;return c=(null!=(d=b("base"))?d.href:void 0)||e(location.pathname),f(c,a)},h.includes=function(b){switch(!1){case null!=b:return!1;case b.constructor===this.constructor:return this.includes(new a(b));case!this.isDir:return b.absPath.indexOf(0===_)(this.absPath);default:return function(a){return b.absPath===a}(this.absPath)}},h.toQueryString=function(){var a,b;return function(){var c,d=[];for(a in c=this.params)b=c[a],d.push(a+"="+(null!=b?b:""));return d}.call(this).join("&")},h.toString=function(){var a,b,c;return a=(b=this.toQueryString())?"?"+b:"",c=(b=this.hash)?"#"+b:"",this.relPath+""+a+c},a}(),h=function(b){var c,d,f,h,i,j,k;return c="_tsAccessed",d=g(b.path),f=function(){var b;return b=slice$.call(arguments),a(a(b).map(function(a){return[].slice.call(document.getElementsByTagName(a))}))},h=function(a,c){var e,h,i;return e=function(){var b,d,e,j,k,l,m=[];for(b=0,e=(d=f(a)).length;e>b;++b)for(h=d[b],j=0,l=(k=c).length;l>j;++j)i=k[j],m.push({elem:h,attr:i,path:g(h.getAttribute(i)),set:partialize$.apply(h,[h.setAttribute,[i,void 0],[1]])});return m}().filter(function(a){var b;return b=a.path,d.includes(b)}),0<e.length&&b.forceReload?(location.reload(),[]):e},i=function(a,b,d){return console.debug(a,b.toString()),b.params[c]=Date.now(),d(b.toString())},j=function(a){var b,c,d,e,f,g,j,k=[];for(b=slice$.call(arguments,1),c=0,e=(d=h(a,b)).length;e>c;++c)f=d[c],g=f.path,j=f.set,k.push(i("refresh",g,j));return k},k=function(a){var b,c,d,f,g,j,k,l,m,n,o,p=[];for(b=slice$.call(arguments,1),c=0,f=(d=h(a,b)).length;f>c;++c)g=d[c],j=g.elem,k=g.attr,l=g.path,m=e(j),n=partialize$.apply(m,[m.setAttribute,[k,void 0],[1]]),i("reinsert",l,n),o=j.parentNode,o.insertBefore(m,j),o.removeChild(j),p.push(o);return p},g(location.pathname).absPath===d.absPath&&location.reload(),j(["link"],"href"),j(["audio","img","video","embed","object"],"src"),k(["script"],"src")},i="undefined"!=typeof WebSocket&&null!==WebSocket?WebSocket:"undefined"!=typeof MozWebSocket&&null!==MozWebSocket?MozWebSocket:function(){throw new Error("Autoreload Client - WebSocket is not available on this browser.")},j=window.location,k=new i("ws://"+j.host+j.pathname+"/ws"),k.onopen=function(){return console.log("Autoreload Client - connected to server.")},k.onmessage=function(a){var b,c;return b=a.data,console.debug("message from server",b),c=JSON.parse(b),c&&function(){switch(c.type){case"update":return h(c)}}()},k}();})();
+</script></head>
+    <body>
+        <header>
+            <div>
+                <div class="backgroundImg">
+                    <img src="./Greatagency Homepage_files/screensaver.jpg" alt="img">
+                </div>
+                <div class="logo"><img src="./Greatagency Homepage_files/great_svart.png" alt="logo"></div>
+            </div>
+            <div class="navigationBar">
+                <div class=" navFirst">
+                    <ul class="menuBar">
+                        <li><a href="./Greatagency Homepage_files/Greatagency Homepage.html">hem</a></li>
+                        <li><a href="./Greatagency Homepage_files/Greatagency Homepage.html">tjänster</a></li>
+                        <li><a href="./Greatagency Homepage_files/Greatagency Homepage.html">kunder</a></li>
+                        <li><a href="./Greatagency Homepage_files/Greatagency Homepage.html">om oss</a></li>
+                        <li><a href="./Greatagency Homepage_files/Greatagency Homepage.html">portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="navSecond">
+                    <ul class="menu">
+                        <li><a href="./Greatagency Homepage_files/Greatagency Homepage.html"><img src="./Greatagency Homepage_files/plain9.png" alt="icon"></a></li>
+                        <li><a href="./Greatagency Homepage_files/Greatagency Homepage.html"><img src="./Greatagency Homepage_files/mail84.png" alt="icon"></a></li>
+                        <li><a href="./Greatagency Homepage_files/Greatagency Homepage.html"><img src="./Greatagency Homepage_files/facebook30.png" alt="icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- end off header -->
+        <div class="services section">
+            <div class="title">
+                <h1>let's make you Great!</h1>
+                <p>Ett axplock av vad vi gör</p>
+                <p>Våra tjänster</p>
+                <p><img src="./Greatagency Homepage_files/pilner.png" alt="pilner"></p>
+            </div>
+            <div class="typeOfServices row">
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf" onclick="$(this).toggleClass(&#39;viewAll&#39;);">
+                        <h4 class="titleService">Logotyp &amp; grafisk profil</h4>
+                        <p class="moreInfo collapsed">Logotypen och den grafiska profilen skapar det första intrycket av ditt företag. De ska locka till intresse, ha hög igenkänningsfaktor, förmedla rätt känsla och sticka ut. Vi ser till helheten och får din profil att bli Great!</p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div onclick="$(this).toggleClass(&#39;viewAll&#39;);" class="inf">
+                        <h4 class="titleService">annonser</h4>
+                        <p class="moreInfo collapsed">Vi vet hur annonser ska utformas för att sticka ut. Vi förstår hur annonser bör utformas; humoristiskt eller allvarligt, kreativt eller informativt, varumärkesbyggande eller kampanjorienterat. Med Great annonsering får ni ett stort genomslag!</p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf" onclick="$(this).toggleClass(&#39;viewAll&#39;);">
+                        <h4 class="titleService">appar</h4>
+                        <p class="moreInfo collapsed">Mobilen är alltid nära till hands. Underlätta för dina kunder och dina medarbetare oavsett om det gäller att hitta närmaste butik, bästa pris eller att skicka in rapporter. Vi bygger Great applications.</p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf" onclick="$(this).toggleClass(&#39;viewAll&#39;);">
+                        <h4 class="titleService">trycksaker</h4>
+                        <p class="moreInfo collapsed">Vi hjälper er med annonser, broschyrer, visitkort, rollups, foliering, skyltar, mässmontrar och allt annat ni behöver trycka. Snygga trycksaker handlar om mer än bara design; det är viktigt att använda rätt material och rätt metod för att det ska bli Great!</p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf" onclick="$(this).toggleClass(&#39;viewAll&#39;);">
+                        <h4 class="titleService">hemsidor</h4>
+                        <p class="moreInfo collapsed">Idag är hemsidan ditt viktigaste verktyg för marknadsföring. Det är mer regel än undantag att dina kunder besöker din hemsida först, oavsett om man letar efter ett telefonnummer eller sitt drömhus. Vi hjälper er att ge ett Great intryck.</p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf" onclick="$(this).toggleClass(&#39;viewAll&#39;);">
+                        <h4 class="titleService">E-handel
+                        </h4>
+                        <p class="moreInfo collapsed">Handeln på internet ökar konstant. Idag är det viktigt att dina kunder kan hitta dina produkter, jämföra, handla och betala snabbt och enkelt. Vi hjälper dig att ta din försäljning från good till Great!</p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf" onclick="$(this).toggleClass(&#39;viewAll&#39;);">
+                        <h4 class="titleService">Sociala medier</h4>
+                        <p class="moreInfo collapsed">
+                        Facebook, Instagram, Twitter växer ständigt och det är ytterligare en plattform där ni kan nå ut till era kunder. Det gäller att ha ett Great budskap. Våra Copywriters fixar texterna.</p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf" onclick="$(this).toggleClass(&#39;viewAll&#39;);">
+                        <h4 class="titleService">Systemintegration</h4>
+                        <p class="moreInfo collapsed">
+                        Vi får dina system att kommunicera med varandra. Din kund kan se aktuellt lagersaldo på din hemsida, ordern går per automatik in i affärssystemet och kunden kan från hemsidan följa ordern i logistiken från beställning till leverans. Vi skapar Great integration!</p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf" onclick="$(this).toggleClass(&#39;viewAll&#39;);">
+                        <h4 class="titleService">Hosting</h4>
+                        <p class="moreInfo collapsed">
+                        Din hemsida och dina domäner ligger tryggt på våra servrar. Det krävs inte en tredje part för att din hemsida ska publiceras. Vi tar helhetsansvar. Allt för att din upplevelse ska bli Great!</p>
+                    </div>
+                </div>
+                <div class="col-md-6 md">
+                </div>
+            </div>
+        </div>
+        <div class="friends section section2">
+            <div class="title">
+                <h1>great friends</h1>
+                <p>Vi arbetar med många olika typer av företag</p>
+                <p>Några av våra kunder </p>
+                <p><img src="./Greatagency Homepage_files/pilner.png" alt="pilner"></p>
+            </div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active"><img src="./Greatagency Homepage_files/galore.png" alt="logo"></div>
+                    <div class="item"><img src="./Greatagency Homepage_files/klaravik.png" alt="logo"></div>
+                    <div class="item"><img src="./Greatagency Homepage_files/hot.png" alt="logo"></div>
+                    <div class="item"><img src="./Greatagency Homepage_files/monkey.png" alt="logo"></div>
+                    <div class="item"><img src="./Greatagency Homepage_files/tba.png" alt="logo"></div>
+                    <div class="item"><img src="./Greatagency Homepage_files/swedcon.png" alt="logo"></div>
+                    <div class="item"><img src="./Greatagency Homepage_files/pxc.png" alt="logo"></div>
+                    
+                </div>
+
+                 <a class="left carousel-control" href="http://localhost:8000/greatagency/index.html#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="http://localhost:8000/greatagency/index.html#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+            </div>
+        </div>
+        <div class="notification">
+        <div class="box">
+
+            <div class="text">
+                <p>I dagens informationssamhälle är det viktigt att profilera sig. Vi utgår alltid från kundens unika situation och erfarenheter när vi tar fram lösningar, oavsett om det rör sig om annons, hemsida, logotyp eller en komplicerad e-handelslösning. Vi gör dig Great!   </p>
+            </div>
+            </div>
+        </div>
+        <div class="portfolio section">
+            <div class="title">
+                <h1>Making Good Great</h1>
+                <p>Lite exempel på vad vi har gjort</p>
+                <p>
+                Great Portfolio </p>
+                <p><img src="./Greatagency Homepage_files/pilner.png" alt="pilner"></p>
+            </div>
+            <div class="Exempels row">
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img src="./Greatagency Homepage_files/galore.jpg" alt="img">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img src="./Greatagency Homepage_files/tryckannons.jpg" alt="img">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img src="./Greatagency Homepage_files/tryckannons.jpg" alt="img">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img src="./Greatagency Homepage_files/tryckannons.jpg" alt="img">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img src="./Greatagency Homepage_files/tryckannons.jpg" alt="img">
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <img src="./Greatagency Homepage_files/tryckannons.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="form section section2">
+            <div class="title">
+                <h1>Vad kan vi hjälpa er
+                <br> med? <br></h1>
+                <p>Fyll i vårt fomulär så kontaktar vi dig! eller ring oss direkt på:</p>
+                <p>040-608 66 60 </p>
+            </div>
+            <div class="row formular">
+                <div class="col col-lg-4  col-xs-12">
+                    <h3>kontaktinfo</h3>
+                    <form action="./Greatagency Homepage_files/Greatagency Homepage.html">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Företag">
+                        <input type="email" placeholder="E post">
+                        <input type="number" placeholder="Telefon">
+                    </form>
+                </div>
+                <div class="col col-lg-4  col-xs-12">
+                    <h3>I behov av</h3>
+                    <div class="contain">
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"> <div>hemsida</div></a>
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"> <div>annons</div></a>
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"><div>Logotype &amp; Grafisk Profil </div></a>
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"><div>E-handel </div></a>
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"><div>Appar</div></a>
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"> <div>Systemintegration </div></a>
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"> <div>Webhotell &amp; Domäner </div></a>
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"><div>Trycksaker</div></a>
+                    </div>
+                </div>
+                <div class="col col-lg-4  col-xs-12 budget">
+                    <h3>projectbudget</h3>
+                    <div class="contain contain2 ">
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"> <div> ≺ 30.000</div></a>
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"><div>30.000 - 50.000 SEK</div></a>
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"> <div>50.000 - 100.000 SEK </div></a>
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"> <div>100.000 SEK +</div></a>
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html"> <div>Inte funderat på budget</div></a>
+                        <button type="submit">Skicka</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footerImg">
+                <img src="./Greatagency Homepage_files/testbildfooter.jpg" alt="img">
+            </div>
+            <div class="information section">
+                <div class="footerLogo">
+                    <img src="./Greatagency Homepage_files/great (1).png" alt="logo">
+                </div>
+                <div class="info">
+                    <p>Great Agency (Webzoo AB)
+                    </p>
+                    <p>Engelbrektsgatan 5, 211 33 Malmö</p>
+                    <p>Kontakta oss så berättar vi mer om hur vi kan hjälpa er!</p>
+                </div>
+                <div class="contact row">
+                    <div class="col col-lg-4 col-md-12">
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html">
+                        <p>Ring oss: 0200-580600</p>
+                        </a>
+                    </div>
+                    <div class="col col-lg-4 col-md-12">
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html">
+                        <p>Mail oss:
+                        info@greatagency.se </p>
+                        </a>
+                    </div>
+                    <div class="col col-lg-4 col-md-12">
+                        <a href="./Greatagency Homepage_files/Greatagency Homepage.html">
+                        <p>Hitta till vår kontor</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© Great Agency (Webzoo AB) </p>
+                </div>
+            </div>
+        </footer>
+        <script src="./Greatagency Homepage_files/jquery.min.js"></script>
+        <script src="./Greatagency Homepage_files/bootstrap.min.js"></script>
+    
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>

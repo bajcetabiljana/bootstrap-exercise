@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Greatagency Homepage</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="final.css">
     </head>
     <body>
@@ -42,71 +43,62 @@
                 <p>Våra tjänster</p>
                 <p><img src="img/pilner.png" alt="pilner"></p>
             </div>
-            <div class="typeOfServeces row">
+            <div class="typeOfServices row">
                 <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <div class="titleService"><h4>logotyp&grafisk profil </h4></div>
-                    <div class="moreInfo">
-                        <h4>Logotyp & grafisk profil</h4>
-                        <p>Logotypen och den grafiska profilen skapar det första intrycket av ditt företag. De ska locka till intresse, ha hög igenkänningsfaktor, förmedla rätt känsla och sticka ut. Vi ser till helheten och får din profil att bli Great!</p>
+                    <div class="inf" onclick="$(this).toggleClass('viewAll');">
+                        <h4 class="titleService">Logotyp & grafisk profil</h4>
+                        <p class="moreInfo collapsed">Logotypen och den grafiska profilen skapar det första intrycket av ditt företag. De ska locka till intresse, ha hög igenkänningsfaktor, förmedla rätt känsla och sticka ut. Vi ser till helheten och får din profil att bli Great!</p>
                     </div>
                 </div>
                 <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <div class="titleService"><h4>annonser </h4></div>
-                    <div class="moreInfo">
-                        <h4>annonser</h4>
-                        <p>Vi vet hur annonser ska utformas för att sticka ut. Vi förstår hur annonser bör utformas; humoristiskt eller allvarligt, kreativt eller informativt, varumärkesbyggande eller kampanjorienterat. Med Great annonsering får ni ett stort genomslag!</p>
+                    <div onclick="$(this).toggleClass('viewAll');" class="inf">
+                        <h4 class="titleService">annonser</h4>
+                        <p class="moreInfo collapsed">Vi vet hur annonser ska utformas för att sticka ut. Vi förstår hur annonser bör utformas; humoristiskt eller allvarligt, kreativt eller informativt, varumärkesbyggande eller kampanjorienterat. Med Great annonsering får ni ett stort genomslag!</p>
                     </div>
                 </div>
                 <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <div class="titleService"><h4>appar</h4></div>
-                    <div class="moreInfo">
-                        <h4>appar</h4>
-                        <p>Mobilen är alltid nära till hands. Underlätta för dina kunder och dina medarbetare oavsett om det gäller att hitta närmaste butik, bästa pris eller att skicka in rapporter. Vi bygger Great applications.</p>
+                    <div class="inf" onclick="$(this).toggleClass('viewAll');">
+                        <h4 class="titleService">appar</h4>
+                        <p class="moreInfo collapsed">Mobilen är alltid nära till hands. Underlätta för dina kunder och dina medarbetare oavsett om det gäller att hitta närmaste butik, bästa pris eller att skicka in rapporter. Vi bygger Great applications.</p>
                     </div>
                 </div>
                 <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <div class="titleService"><h4>trycksaker</h4></div>
-                    <div class="moreInfo">
-                        <h4>trycksaker</h4>
-                        <p>Vi hjälper er med annonser, broschyrer, visitkort, rollups, foliering, skyltar, mässmontrar och allt annat ni behöver trycka. Snygga trycksaker handlar om mer än bara design; det är viktigt att använda rätt material och rätt metod för att det ska bli Great!</p>
+                    <div class="inf" onclick="$(this).toggleClass('viewAll');">
+                        <h4 class="titleService">trycksaker</h4>
+                        <p class="moreInfo collapsed">Vi hjälper er med annonser, broschyrer, visitkort, rollups, foliering, skyltar, mässmontrar och allt annat ni behöver trycka. Snygga trycksaker handlar om mer än bara design; det är viktigt att använda rätt material och rätt metod för att det ska bli Great!</p>
                     </div>
                 </div>
                 <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <div class="titleService"><h4>hemsidor</h4></div>
-                    <div class="moreInfo">
-                        <h4>hemsidor</h4>
-                        <p>Idag är hemsidan ditt viktigaste verktyg för marknadsföring. Det är mer regel än undantag att dina kunder besöker din hemsida först, oavsett om man letar efter ett telefonnummer eller sitt drömhus. Vi hjälper er att ge ett Great intryck.</p>
+                    <div class="inf" onclick="$(this).toggleClass('viewAll');">
+                        <h4 class="titleService">hemsidor</h4>
+                        <p class="moreInfo collapsed">Idag är hemsidan ditt viktigaste verktyg för marknadsföring. Det är mer regel än undantag att dina kunder besöker din hemsida först, oavsett om man letar efter ett telefonnummer eller sitt drömhus. Vi hjälper er att ge ett Great intryck.</p>
                     </div>
                 </div>
                 <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <div class="titleService"><h4>e-handel</h4></div>
-                    <div class="moreInfo">
-                        <h4>E-handel
+                    <div class="inf" onclick="$(this).toggleClass('viewAll');">
+                        <h4 class="titleService">E-handel
                         </h4>
-                        <p>Handeln på internet ökar konstant. Idag är det viktigt att dina kunder kan hitta dina produkter, jämföra, handla och betala snabbt och enkelt. Vi hjälper dig att ta din försäljning från good till Great!</p>
+                        <p class="moreInfo collapsed">Handeln på internet ökar konstant. Idag är det viktigt att dina kunder kan hitta dina produkter, jämföra, handla och betala snabbt och enkelt. Vi hjälper dig att ta din försäljning från good till Great!</p>
                     </div>
                 </div>
                 <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <div class="titleService"><h4>sociala medier</h4></div>
-                    <div class="moreInfo">
-                        <h4>Sociala medier</h4>
-                        <p>
+                    <div class="inf" onclick="$(this).toggleClass('viewAll');">
+                        <h4 class="titleService">Sociala medier</h4>
+                        <p class="moreInfo collapsed">
                         Facebook, Instagram, Twitter växer ständigt och det är ytterligare en plattform där ni kan nå ut till era kunder. Det gäller att ha ett Great budskap. Våra Copywriters fixar texterna.</p>
                     </div>
                 </div>
                 <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <div class="titleService"><h4>systemintegration </h4></div>
-                    <div class="moreInfo">
-                        <h4>Systemintegration</h4>
-                        <p>
+                    <div class="inf" onclick="$(this).toggleClass('viewAll');">
+                        <h4 class="titleService">Systemintegration</h4>
+                        <p class="moreInfo collapsed">
                         Vi får dina system att kommunicera med varandra. Din kund kan se aktuellt lagersaldo på din hemsida, ordern går per automatik in i affärssystemet och kunden kan från hemsidan följa ordern i logistiken från beställning till leverans. Vi skapar Great integration!</p>
                     </div>
                 </div>
                 <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <div class="titleService"><h4>hosting</h4></div>
-                    <div class="moreInfo">
-                        <h4>Hosting</h4>
-                        <p>
+                    <div class="inf" onclick="$(this).toggleClass('viewAll');">
+                        <h4 class="titleService">Hosting</h4>
+                        <p class="moreInfo collapsed">
                         Din hemsida och dina domäner ligger tryggt på våra servrar. Det krävs inte en tredje part för att din hemsida ska publiceras. Vi tar helhetsansvar. Allt för att din upplevelse ska bli Great!</p>
                     </div>
                 </div>
@@ -114,18 +106,38 @@
                 </div>
             </div>
         </div>
-        <div class="friends section section2">
+        <div class="friends section2">
             <div class="title">
                 <h1>great friends</h1>
                 <p>Vi arbetar med många olika typer av företag</p>
                 <p>Några av våra kunder </p>
                 <p><img src="img/pilner.png" alt="pilner"></p>
             </div>
-            <div class="carusel"></div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active"><img src="img/galore.png" alt="logo"></div>
+                    <div class="item"><img src="img/klaravik.png" alt="logo"></div>
+                    <div class="item"><img src="img/hot.png" alt="logo"></div>
+                    <div class="item"><img src="img/monkey.png" alt="logo"></div>
+                    <div class="item"><img src="img/tba.png" alt="logo"></div>
+                    <div class="item"><img src="img/swedcon.png" alt="logo"></div>
+                    <div class="item"><img src="img/pxc.png" alt="logo"></div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
         <div class="notification">
-            <div class="text">
-                <p>I dagens informationssamhälle är det viktigt att profilera sig. Vi utgår alltid från kundens unika situation och erfarenheter när vi tar fram lösningar, oavsett om det rör sig om annons, hemsida, logotyp eller en komplicerad e-handelslösning. Vi gör dig Great!   </p>
+            <div class="box">
+                <div class="text">
+                    <p>I dagens informationssamhälle är det viktigt att profilera sig. Vi utgår alltid från kundens unika situation och erfarenheter när vi tar fram lösningar, oavsett om det rör sig om annons, hemsida, logotyp eller en komplicerad e-handelslösning. Vi gör dig Great!   </p>
+                </div>
             </div>
         </div>
         <div class="portfolio section">
@@ -136,106 +148,130 @@
                 Great Portfolio </p>
                 <p><img src="img/pilner.png" alt="pilner"></p>
             </div>
-            <div class="Exempels row">
+            <div class="exempels row">
                 <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <img src="img/galore.jpg" alt="img">
-                </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <img src="img/tryckannons.jpg" alt="img">
-                </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <img src="img/tryckannons.jpg" alt="img">
-                </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <img src="img/tryckannons.jpg" alt="img">
-                </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <img src="img/tryckannons.jpg" alt="img">
-                </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12">
-                    <img src="img/tryckannons.jpg" alt="img">
-                </div>
-            </div>
-        </div>
-        <div class="form section section2">
-            <div class="title">
-                <h1>Vad kan vi hjälpa er
-                <br> med? </br></h1>
-                <p>Fyll i vårt fomulär så kontaktar vi dig! eller ring oss direkt på:</p>
-                <p>040-608 66 60 </p>
-            </div>
-            <div class="row formular">
-                <div class="col col-lg-4  col-xs-12">
-                    <h3>kontaktinfo</h3>
-                    <form action="#">
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Företag">
-                        <input type="email"placeholder="E post">
-                        <input type="number" placeholder="Telefon">
-                    </form>
-                </div>
-                <div class="col col-lg-4  col-xs-12">
-                    <h3>I behov av</h3>
-                    <div class="container cont">
-                        <a href="#"> <div>hemsida</div></a>
-                        <a href="#"> <div>annons</div></a>
-                        <a href="#"><div>Logotype & Grafisk Profil </div></a>
-                        <a href="#"><div>E-handel </div></a>
-                        <a href="#"><div>Appar</div></a>
-                        <a href="#"> <div>Systemintegration </div></a>
-                        <a href="#"> <div>Webhotell & Domäner </div></a>
-                        <a href="#"><div>Trycksaker</div></a>
+                    <div class="inf">
+                        <h4 class="titleService">Galore Anytime</h4>
+                        <p>Hemsida: <a href="#"> www.galoreanytime.se</a></p>
                     </div>
                 </div>
-                <div class="col col-lg-4  col-xs-12 budget">
-                    <h3>projectbudget</h3>
-                    <div class="container container2 ">
-                        <a href="#"> <div> &#8826 30.000</div></a>
-                        <a href="#"><div>30.000 - 50.000 SEK</div></a>
-                        <a href="#"> <div>50.000 - 100.000 SEK </div></a>
-                        <a href="#"> <div>100.000 SEK +</div></a>
-                        <a href="#"> <div>Inte funderat på budget</div></a>
-                        <button type="submit">Skicka</button>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf">
+                        <h4 class="titleService">Svekraft
+                        </h4>
+                        <p>Logotyp, grafisk profil och hemsida: <a href="#">www.svekraft.se</a></p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf">
+                        <h4 class="titleService">Våningen & Villan
+                        </h4>
+                        <p>Hemsida:<a href="#"> www.vaningen.se</a></p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf">
+                        <h4 class="titleService">Grip
+                        </h4>
+                        <p>Logotyp och grafisk profil</p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf">
+                        <h4 class="titleService">Third Base
+                        </h4>
+                        <p>Logotyp, grafisk profil och hemsida:<a href="#"> www.thirdbase.se</a></p>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-12">
+                    <div class="inf">
+                        <h4 class="titleService">Monkey Salad
+                        </h4>
+                        <p>Logotyp, grafisk profil och hemsida: <a href="#">www.monkeysalad.se</a></p>
                     </div>
                 </div>
             </div>
-        </div>
-        <footer>
-            <div class="footerImg">
-                <img src="img/testbildfooter.jpg" alt="img">
+            <div class="form section section2">
+                <div class="title">
+                    <h1>Vad kan vi hjälpa er
+                    <br> med? </br></h1>
+                    <p>Fyll i vårt fomulär så kontaktar vi dig! eller ring oss direkt på:</p>
+                    <p>040-608 66 60 </p>
+                </div>
+                <div class="row formular">
+                    <div class="col col-lg-4  col-xs-12">
+                        <h3>kontaktinfo</h3>
+                        <form action="#">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Företag">
+                            <input type="email"placeholder="E post">
+                            <input type="number" placeholder="Telefon">
+                        </form>
+                    </div>
+                    <div class="col col-lg-4  col-xs-12">
+                        <h3>I behov av</h3>
+                        <div class="contain">
+                            <a href="#"> <div>hemsida</div></a>
+                            <a href="#"> <div>annons</div></a>
+                            <a href="#"><div>Logotype & Grafisk Profil </div></a>
+                            <a href="#"><div>E-handel </div></a>
+                            <a href="#"><div>Appar</div></a>
+                            <a href="#"> <div>Systemintegration </div></a>
+                            <a href="#"> <div>Webhotell & Domäner </div></a>
+                            <a href="#"><div>Trycksaker</div></a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4  col-xs-12 budget">
+                        <h3>projectbudget</h3>
+                        <div class="contain contain2 ">
+                            <a href="#"> <div> &#8826 30.000</div></a>
+                            <a href="#"><div>30.000 - 50.000 SEK</div></a>
+                            <a href="#"> <div>50.000 - 100.000 SEK </div></a>
+                            <a href="#"> <div>100.000 SEK +</div></a>
+                            <a href="#"> <div>Inte funderat på budget</div></a>
+                            <button type="submit">Skicka</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="information section">
-                <div class="footerLogo">
-                    <img src="img/great (1).png" alt="logo">
+            <footer>
+                <div class="footerImg">
+                    <img src="img/testbildfooter.jpg" alt="img">
                 </div>
-                <div class="info">
-                    <p>Great Agency (Webzoo AB)
-                    </p>
-                    <p>Engelbrektsgatan 5, 211 33 Malmö</p>
-                    <p>Kontakta oss så berättar vi mer om hur vi kan hjälpa er!</p>
-                </div>
-                <div class="contact row">
-                    <div class="col col-lg-4 col-md-12">
-                        <a  href="#">
-                        <p>Ring oss: 0200-580600</p>
-                        </a>
+                <div class="information section">
+                    <div class="footerLogo">
+                        <img src="img/great (1).png" alt="logo">
                     </div>
-                    <div class="col col-lg-4 col-md-12">
-                        <a href="#">
-                        <p>Mail oss:
-                        info@greatagency.se </p>
-                        </a>
+                    <div class="info">
+                        <p>Great Agency (Webzoo AB)
+                        </p>
+                        <p>Engelbrektsgatan 5, 211 33 Malmö</p>
+                        <p>Kontakta oss så berättar vi mer om hur vi kan hjälpa er!</p>
                     </div>
-                    <div class="col col-lg-4 col-md-12">
-                        <a href="#">
-                        <p>Hitta till vår kontor</p>
-                        </a>
+                    <div class="contact row">
+                        <div class="col col-lg-4 col-md-12">
+                            <a  href="#">
+                            <p>Ring oss: 0200-580600</p>
+                            </a>
+                        </div>
+                        <div class="col col-lg-4 col-md-12">
+                            <a href="#">
+                            <p>Mail oss:
+                            info@greatagency.se </p>
+                            </a>
+                        </div>
+                        <div class="col col-lg-4 col-md-12">
+                            <a href="#">
+                            <p>Hitta till vår kontor</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>© Great Agency (Webzoo AB) </p>
                     </div>
                 </div>
-                <div class="copyright">
-                    <p>© Great Agency (Webzoo AB) </p>
-                </div>
-            </div>
-        </footer>
-    </body>
-</html>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        </body>
+    </html>

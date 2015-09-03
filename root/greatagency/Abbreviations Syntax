@@ -1,0 +1,50 @@
+Child: >
+You can use > operator to nest elements inside each other:
+
+div>ul>li
+...will produce
+
+<div>
+    <ul>
+        <li></li>
+    </ul>
+</div>
+
+
+Sibling: +
+Use + operator to place elements near each other, on the same level:
+
+div+p+bq
+...will output
+
+<div></div>
+<p></p>
+<blockquote></blockquote>
+
+
+
+Multiplication: *
+With * operator you can define how many times element should be outputted:
+
+ul>li*5
+...outputs to
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+
+...
+
+div+div>p>span+em 
+...will be expanded to
+
+<div></div>
+<div>
+    <p><span></span><em></em></p>
+</div>
+

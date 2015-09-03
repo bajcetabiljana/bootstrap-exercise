@@ -74,12 +74,15 @@ a {
 
 .section2 {
     padding: 0;
+    text-align: center;
+    text-transform: capitalize;
 }
 
-.section p:nth-of-type(2) {
+.section p:nth-of-type(2),.section2 p:nth-of-type(2) {
     font-weight: bolder;
     padding: 15px 0;
 }
+
 
 .title {
     margin-bottom: 70px;
@@ -119,12 +122,20 @@ h4 {
     width: 33%;
 }
 
-.md, .moreInfo{
+.typeOfServices>div.md {
     display: none;
 }
 
+.contain {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
 
-.container div {
+.contain div {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -139,9 +150,10 @@ h4 {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0 0 -3px -3px;
 }
 
-.container2 a {
+.contain2 a {
     width: 100%;
 }
 
@@ -210,43 +222,43 @@ header .logo img {
     max-height: 290px;
 }
 
-.typeOfServeces>div:nth-child(1) {
+.typeOfServices>div:nth-child(1) {
     background-image: url(img/logotype-grafiskprofil.jpg);
 }
 
-.typeOfServeces>div:nth-child(2) {
+.typeOfServices>div:nth-child(2) {
     background-image: url(img/tryckannons.jpg);
 }
 
-.typeOfServeces>div:nth-child(3) {
+.typeOfServices>div:nth-child(3) {
     background-image: url(img/appar3.jpg);
 }
 
-.typeOfServeces>div:nth-child(4) {
+.typeOfServices>div:nth-child(4) {
     background-image: url(img/trycksaker.jpg);
 }
 
-.typeOfServeces>div:nth-child(5) {
+.typeOfServices>div:nth-child(5) {
     background-image: url(img/hemsida.jpg);
 }
 
-.typeOfServeces>div:nth-child(6) {
+.typeOfServices>div:nth-child(6) {
     background-image: url(img/e-handel.jpg);
 }
 
-.typeOfServeces>div:nth-child(7) {
+.typeOfServices>div:nth-child(7) {
     background-image: url(img/sociala-medier.jpg);
 }
 
-.typeOfServeces>div:nth-child(8) {
+.typeOfServices>div:nth-child(8) {
     background-image: url(img/systemintegration.jpg);
 }
 
-.typeOfServeces>div:nth-child(9) {
+.typeOfServices>div:nth-child(9) {
     background-image: url(img/hosting.jpg);
 }
 
-.typeOfServeces>div {
+.typeOfServices>div {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -261,7 +273,121 @@ header .logo img {
     height: 21vw;
 }
 
-.typeOfServeces .titleService {
+
+.inf {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: white;
+    padding: 15px 0;
+}
+
+.moreInfo {
+    display: none;
+    color: gray;
+    line-height: 1.4vw;
+    font-size: 1.3vw;
+    text-align: left;
+    margin: 1.6vw;
+}
+
+.typeOfServices>div:hover .inf {
+    width: 90%;
+    height: 80%;
+}
+
+.typeOfServices>div:hover .moreInfo {
+    display: block;
+}
+
+.notification {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url(img/office.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.box {
+    height: 600px;
+    width: 60%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.text {
+    color: white;
+    line-height: 3vw;
+    font-weight: bolder;
+    font-size: 2.6vw;
+}
+
+.carousel-inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 200px;
+}
+
+.carousel-control {
+    width: 5%;
+    color: #33E836;
+}
+
+.carousel-inner>.item {
+    display: inline;
+}
+
+.carousel-inner>.item>img {
+    padding: 0 30px;
+}
+
+.exempels>div:nth-child(1) {
+    background-image: url(img/galore.jpg);
+}
+
+.exempels>div:nth-child(2) {
+    background-image: url(img/svekraftlogga.jpg);
+}
+
+.exempels>div:nth-child(3) {
+    background-image: url(img/vaningen.jpg);
+}
+
+.exempels>div:nth-child(4) {
+    background-image: url(img/griplogga.jpg);
+}
+
+.exempels>div:nth-child(5) {
+    background-image: url(img/thirdbase2.jpg);
+}
+
+.exempels>div:nth-child(6) {
+    background-image: url(img/monkeylogga.jpg);
+}
+
+.exempels>div {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -271,44 +397,36 @@ header .logo img {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: white;
-    padding: 4px 10px;
-}
-
-.typeOfServeces div:hover .titleService{
-display: none;
-}
-.typeOfServeces div:hover .moreInfo{
-display: block;
-background-color: white;
-width: 90%;
-height: 90%;
-text-align: left;
-box-sizing: border-box;
-padding: 10px 30px;
-}
-.moreInfo p {
-    color: gray;
-    line-height: 20px;
-    font-size: 1.2vw;
-    margin-top: 0.4vw;
-}
-
-
-
-.notification {
-    background-image: url(img/office.jpg);
-    background-size: 100% 100%;
-    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 21vw;
+}
+.exempels .inf {
+    display: none;
+}
+.exempels>div:hover .inf{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+    height: 80%;
+    color: gray;
+    line-height: 3vw;
+    font-size: 1.3vw;
+}
+.exempels a {
+    color: #38A2C6;
+}
+.exempels h4 {
+    color: #33E836;
 }
 
-.text {
-    color: white;
-    padding: 200px 25px;
-    font-weight: bolder;
-    font-size: 50px;
-}
 
 .formular {
     -webkit-justify-content: space-between;
@@ -327,30 +445,7 @@ input {
     padding-left: 10px;
     border: 3px solid #33E836;
     box-sizing: border-box;
-}
-
-input:nth-child(-n+3) {
-    border-bottom: none;
-}
-
-.container a:nth-child(-n+4) div {
-    border-bottom: none;
-}
-
-.cont a:nth-child(-n+6) div {
-    border-bottom: none;
-}
-
-.cont a:first-child div, .cont a:nth-child(4) div, .cont a:nth-child(7) div {
-    border-right: none;
-}
-
-.cont a:nth-child(4) div, .cont a:nth-child(5) div {
-    border-top: none;
-}
-
-.cont a:nth-child(3) div {
-    border-bottom: 3px solid #33E836;
+    margin-bottom: -3px;
 }
 
 button {
@@ -433,19 +528,19 @@ footer .row {
     .col-md-6 {
         width: 50%;
     }
-    .typeOfServeces>div {
+    .typeOfServices>div {
         height: 24vw;
+    }
+    .moreInfo {
+        line-height: 2.3vw;
+        font-size: 1.8vw;
     }
     .md {
         display: inline-block;
         background-color: #33E836;
     }
-    .moreInfo h4 {
-        font-size: 3vw;
-    }
-    .moreInfo p {
-        font-size: 1.5vw;
-        margin-top: 4px;
+    .exempels>div {
+       height: 24vw; 
     }
     .formular .col-xs-12 {
         width: 100%;
@@ -463,6 +558,13 @@ footer .row {
     .contact .col-md-12 {
         width: 100%;
         margin: 1vw 3vw;
+    }
+    .text {
+        line-height: 6vw;
+        font-size: 40px;
+    }
+    .box {
+        width: 90%;
     }
 }
 
@@ -482,28 +584,49 @@ footer .row {
     .col-sm-12 {
         width: 100%;
     }
-    .typeOfServeces .md {
+    .typeOfServices .md {
         display: none;
     }
-    .typeOfServeces .titleService {
+    .typeOfServices .info {
         width: 90%;
         height: 50%;
-        padding: 0;
     }
-.typeOfServeces div:hover .moreInfo {
-    display: none;
-}
-.typeOfServeces div:hover .titleService {
-display: inherit;
-cursor: pointer;
-}
-.typeOfServeces .titleService:focus .moreInfo{
-    display: block;
-
-}
-
-
-
-
+    .typeOfServices>div:hover .moreInfo {
+        display: none;
+    }
+    .typeOfServices>div:hover .info {
+        width: 90%;
+        height: 50%;
+    }
+    .typeOfServices>div {
+        height: auto;
+    }
+    .collapsed {
+        display: none;
+    }
+    .viewAll .collapsed {
+        display: block !important;
+    }
+    .inf {
+        font-size: 18px !important;
+        padding: 15px 10px;
+        margin: 10px 10px;
+    }
+    .titleService {
+        font-size: 6vw;
+    }
+    .moreInfo {
+        font-size: 4vw;
+        line-height: 4.5vw;
+        margin: 4vw;
+    }
+    .text {
+        text-align: center;
+        line-height: 6vw;
+        font-size: 30px;
+    }
+    .box {
+        width: 90%;
+    }
 }
 /*# sourceMappingURL=main.css.map */
