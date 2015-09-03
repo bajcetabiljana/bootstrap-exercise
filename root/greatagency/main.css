@@ -408,7 +408,6 @@ button {
 }
 
 footer {
-    margin-top: 140px;
     background-color: #33E836;
     color: white;
 }
@@ -467,13 +466,20 @@ footer .row {
         line-height: 2.3vw;
         font-size: 1.8vw;
     }
-    .md {
+    .typeOfServices>div.md {
         display: inline-block;
         background-color: #33E836;
     }
     .exempels>div {
-       height: 24vw; 
+       height: 400px;
+       align-items: flex-end; 
     }
+    .exempels>div:hover .inf {
+        width: 90%;
+        height: 35%;
+        margin-bottom: 30px;
+    }
+   
     .formular .col-xs-12 {
         width: 100%;
         margin: 60px 3vw;
@@ -505,6 +511,7 @@ footer .row {
     .navSecond li {
         margin-left: 2px;
     }
+
 }
 
 @media (max-width: 640px) {
@@ -557,5 +564,8 @@ footer .row {
     }
     .box {
         width: 90%;
+    }
+    .exempels h4 {
+        padding-bottom: 25px;
     }
 }
